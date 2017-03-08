@@ -1,5 +1,5 @@
 .block-chart {
-	padding: 25px 7px;
+	padding: 25px 29px;
 	background-color: #fff;
 }
 .chart {
@@ -8,7 +8,7 @@
 	&:before {
 		content: '';
 		display: block;
-		z-index: -1;
+		z-index: 0;
 		width: 100%;
 		height: 200px;
 		position: absolute;

@@ -18,7 +18,31 @@ function Page(){
 		if($('[data-scroll]').length > 0) {
 			$('[data-scroll]').mCustomScrollbar();
 		}
+
+		$('.heading-milestone .notif').click(function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');
+				$(this).parent().find('.notif-show').removeClass('active');
+			}else{
+				$(this).addClass('active');
+				$(this).parent().find('.notif-show').addClass('active');
+			}
+		});
+		$('.xem-lo-trinh').click(function(){
+			$('.learing-process').show();
+		});
+		$('.point-close').click(function(){
+			$('.learing-process').hide();
+		});
 	}
+
+	$(document).mouseup(function (e){
+	    var container = $('.heading-milestone .notif');
+
+	    if (!container.is(e.target) && container.has(e.target).length === 0) {
+     		$('.heading-milestone .notif .no.active').trigger('click');
+	    }
+	});
 }
 Page = new Page();
 $(document).ready(function() {

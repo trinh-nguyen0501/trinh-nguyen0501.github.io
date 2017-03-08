@@ -1,91 +1,269 @@
-/*
-Error: Undefined mixin 'size'.
-        on line 37 of /Users/trinhnguyen/super_cute/styles/blocks/common.scss, in `size'
-        from line 37 of /Users/trinhnguyen/super_cute/styles/blocks/common.scss
+a:hover {
+  text-decoration: none; }
 
-32:     list-style-type: none;
-33:     li {
-34:       // float: left;
-35:       display: inline-block;;
-36:       position: relative;
-37:       @include size(20px, 24px);
-38:       background-color: #ebebeb;
-39:       margin-right: 22px;
-40:       margin-bottom: 35px;
-41:       &:first-child {
-42:         margin-left: 20px;
+.gochoctap {
+  background-color: #ebebeb; }
+  .gochoctap section {
+    margin-bottom: 30px; }
 
-Backtrace:
-/Users/trinhnguyen/super_cute/styles/blocks/common.scss:37:in `size'
-/Users/trinhnguyen/super_cute/styles/blocks/common.scss:37
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `with_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'size'.\A         on line 37 of /Users/trinhnguyen/super_cute/styles/blocks/common.scss, in `size'\A         from line 37 of /Users/trinhnguyen/super_cute/styles/blocks/common.scss\A \A 32:     list-style-type: none;\A 33:     li {\A 34:       // float: left;\A 35:       display: inline-block;;\A 36:       position: relative;\A 37:       @include size(20px, 24px);\A 38:       background-color: #ebebeb;\A 39:       margin-right: 22px;\A 40:       margin-bottom: 35px;\A 41:       &:first-child {\A 42:         margin-left: 20px;"; }
+.days-learning {
+  display: inline-block;
+  border-radius: 30px;
+  min-width: 280px;
+  color: #fff;
+  background-color: #404040;
+  padding: 12px 20px; }
+  .days-learning > img {
+    margin-left: 5px; }
+  .days-learning > span {
+    margin-right: 2px; }
+
+.learing-process {
+  background-color: #fff;
+  padding: 20px 5px 25px 15px;
+  text-align: center;
+  border-radius: 5px; }
+  @media only screen and (max-width: 991px) {
+    .learing-process {
+      display: none; } }
+  .learing-process .process-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    .learing-process .process-list li {
+      display: inline-block;
+      position: relative;
+      width: 20px;
+      height: 24px;
+      background-color: #ebebeb;
+      margin-right: 22px;
+      margin-bottom: 35px; }
+      .learing-process .process-list li:first-child {
+        margin-left: 20px; }
+        .learing-process .process-list li:first-child > span:first-child {
+          left: -40px;
+          right: auto; }
+      .learing-process .process-list li .flag {
+        position: absolute;
+        right: -38px; }
+        .learing-process .process-list li .flag img {
+          width: 20px; }
+      .learing-process .process-list li.finish {
+        width: 10px;
+        background-color: #87c52e; }
+        .learing-process .process-list li.finish:before {
+          border-color: #87c52e;
+          border-left-color: transparent; }
+        .learing-process .process-list li.finish:after {
+          border-left-color: #87c52e; }
+        .learing-process .process-list li.finish .point {
+          background-color: #87c52e; }
+      .learing-process .process-list li.not-finish {
+        background-color: #33abe5; }
+        .learing-process .process-list li.not-finish:before {
+          border-color: #33abe5;
+          border-left-color: transparent; }
+        .learing-process .process-list li.not-finish:after {
+          border-left-color: #33abe5; }
+        .learing-process .process-list li.not-finish .point {
+          background-color: #33abe5; }
+      .learing-process .process-list li .point {
+        display: block;
+        min-width: 32px;
+        padding: 4px 7px;
+        position: absolute;
+        bottom: -30px;
+        right: -20px;
+        color: #333;
+        font-size: 10px;
+        border-radius: 20px;
+        background-color: #ebebeb;
+        font-family: "Roboto-Medium"; }
+      .learing-process .process-list li:before, .learing-process .process-list li:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0; }
+      .learing-process .process-list li:before {
+        border: 12px solid #ebebeb;
+        border-right-width: 12px;
+        border-left-color: transparent;
+        left: -20px; }
+      .learing-process .process-list li:after {
+        border-left: 12px solid #ebebeb;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        right: -12px; }
+      .learing-process .process-list li .img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+        @media only screen and (max-width: 991px) {
+          .learing-process .process-list li .img img {
+            max-width: 10px; } }
+  @media only screen and (min-width: 992px) {
+    .learing-process {
+      padding: 30px 0 20px; }
+      .learing-process .process-list li {
+        width: 80px;
+        height: 40px;
+        margin-right: 25px; }
+        .learing-process .process-list li:before {
+          border-width: 20px; }
+        .learing-process .process-list li:after {
+          border-left-width: 20px;
+          border-top-width: 20px;
+          border-bottom-width: 20px;
+          right: -20px; }
+        .learing-process .process-list li.finish {
+          width: 40px; }
+        .learing-process .process-list li .flag {
+          right: -60px; }
+          .learing-process .process-list li .flag img {
+            width: 28px; } }
+
+.button-link {
+  display: block;
+  color: #fff;
+  background-color: #33abe5;
+  text-transform: uppercase;
+  padding: 15px 12px;
+  text-align: center;
+  border-radius: 5px;
+  transition: opacity .3s linear;
+  margin-bottom: 10px; }
+  .button-link.style-1 {
+    display: inline-block;
+    min-width: 70px;
+    padding: 8px 12px; }
+  .button-link:hover {
+    color: #fff;
+    opacity: .8; }
+
+.progress {
+  background-color: #ebebeb;
+  border-radius: 6px;
+  width: 100%;
+  height: 30px;
+  box-shadow: none;
+  overflow: visible;
+  margin-top: 30px; }
+  .progress .progress-bar {
+    background-color: #87c52e;
+    border-radius: 6px;
+    box-shadow: none;
+    position: relative; }
+    .progress .progress-bar .value-min, .progress .progress-bar .value-current {
+      display: block;
+      position: absolute; }
+    .progress .progress-bar .value-min {
+      bottom: -25px;
+      left: 0px;
+      color: #333; }
+    .progress .progress-bar .value-current {
+      min-width: 40px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      color: #fff;
+      top: -30px;
+      right: -15px;
+      background-color: #87c52e; }
+      .progress .progress-bar .value-current:before {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-top: 6px solid #87c52e;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent; }
+
+.block-milestone {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3); }
+  .block-milestone .inner {
+    padding: 25px 15px;
+    overflow: hidden; }
+  .block-milestone .name {
+    float: left; }
+    .block-milestone .name > img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      vertical-align: middle; }
+    .block-milestone .name h3 {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      padding-left: 13px;
+      font-size: 15px;
+      font-family: "Roboto Medium"; }
+  .block-milestone .button-link {
+    float: right;
+    margin-top: 10px; }
+  .block-milestone.block-milestone-1 .name {
+    float: none;
+    text-align: center;
+    margin: 15px 0 5px; }
+  .block-milestone.block-milestone-1 .button-link {
+    float: none;
+    display: block;
+    margin-bottom: 0; }
+  .block-milestone.block-milestone-1 .progress {
+    margin-top: 68px; }
+  .block-milestone.block-milestone-1.milestone-finish .button-link {
+    position: relative;
+    height: 53px;
+    padding: 15px 0px 15px 50px;
+    font-size: 15px;
+    font-family: "Roboto-Bold";
+    letter-spacing: -1px; }
+    .block-milestone.block-milestone-1.milestone-finish .button-link > span {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 52px;
+      padding: 12px 0;
+      background-color: #71b200;
+      border-radius: 5px; }
+  .block-milestone.block-milestone-1.milestone-finish .name > img {
+    width: 96px;
+    height: 81px; }
+
+.view-all {
+  display: inline-block;
+  min-width: 122px;
+  font-size: 14px;
+  color: #666;
+  padding: 7px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px; }
+
+.learing-title {
+  font-size: 25px;
+  margin: 0;
+  line-height: 1.3; }
+  .learing-title .bold {
+    font-family: "Roboto-Bold"; }
+  .learing-title .status {
+    display: inline-block;
+    min-width: 57px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #ff6045; }
+
+/*# sourceMappingURL=common.css.map */

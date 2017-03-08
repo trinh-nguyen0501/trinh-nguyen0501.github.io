@@ -246,7 +246,10 @@
            <img src="images/icon_notif.png" alt="notification">
            <span class="no">2</span>
            <div class="notif-show">
-             <p class="level">Thứ hạng: 102      Cấp độ: 2</p>
+             <p class="level">
+               <span>Thứ hạng: 102</span>
+              <span>Cấp độ: 2</span>
+             </p>
              <ul class="notif-list">
                <li><img src="images/icon_user.png" alt="">Lorem ipsum dolor</li>
                <li><img src="images/icon_mess.png" alt="">Morbi finibus sodales</li>
@@ -261,7 +264,7 @@
            </li>
            <li>
              <img src="images/icon_lo_trinh_hoc.png" alt="">
-             <span>Xem lộ trình <br> học của bạn</span>
+             <span class="xem-lo-trinh">Xem lộ trình <br> học của bạn</span>
            </li>
          </ul>
        </div>
@@ -269,13 +272,15 @@
          <ul class="process-list">
            <li class="finish">
              <span class="point">250</span>
-             <i class="fa fa-check"></i>
+             <span class="img"><img src="images/upload/icon_done.png" alt=""></span>
              <span class="point">275</span>
            </li>
            <li class="finish">
+             <span class="img"><img src="images/upload/icon_done.png" alt=""></span>
              <span class="point">250</span>
            </li>
            <li class="not-finish">
+             <span class="img"><img src="images/upload/icon_pin.png" alt=""></span>
              <span class="point">350</span>
            </li>
            <li>
@@ -310,9 +315,9 @@
        </div>
      </section>
      <div class="row">
-       <div class="col-sm-8">
+       <div class="col-md-8">
          <section class="suggest-block">
-           <div class="block-milestone block-milestone-1">
+           <div id="a" class="block-milestone block-milestone-1">
             <div class="inner">
               <h2 class="learing-title">
                 Hôm nay Gia sư TOEIC đề xuất bạn học
@@ -321,38 +326,46 @@
                 <img src="images/upload/icon_ngu_phap.png" alt="">
                 <h3>Phần 7</h3>
               </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                <span class="value-min">X%</span>
-                <span class="value-current">Y%</span>
-                <span class="sr-only">30% Complete</span>
+              <div class="milestone-group">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                  <span class="value-min">X%</span>
+                  <span class="value-current">Y%</span>
+                  <span class="sr-only">30% Complete</span>
+                  </div>
                 </div>
+                <a href="#" class="button-link style-1">Luyện</a>
               </div>
-              <a href="#" class="button-link style-1">Luyện</a>
             </div>
           </div>
-          <div class="block-milestone block-milestone-1">
+          <div class="block-milestone block-milestone-2">
             <div class="inner">
               <h2 class="learing-title">
                 Hôm nay Gia sư TOEIC đề xuất bạn học
               </h2>
+              <img src="images/upload/icon_de_xuat_ban_hoc_2.png" alt="" class="hidden-sm hidden-xs">
+              <div class="milestone-group">
               <div class="name">
                 <img src="images/upload/icon_ngu_phap.png" alt="">
                 <h3>Đại từ</h3>
               </div>
               <a href="#" class="button-link style-1">Luyện</a>
             </div>
+            </div>
           </div>
-          <div class="block-milestone block-milestone-1">
+          <div class="block-milestone block-milestone-2">
             <div class="inner">
               <h2 class="learing-title">
                 Hôm nay Gia sư TOEIC đề xuất bạn học
               </h2>
+              <img src="images/upload/icon_de_xuat_ban_hoc_3.png" alt="" class="hidden-sm hidden-xs">
+              <div class="milestone-group">
               <div class="name">
                 <img src="images/upload/icon_account.png" alt="">
                 <h3>Accounting</h3>
               </div>
               <a href="#" class="button-link style-1">Luyện</a>
+            </div>
             </div>
           </div>
           <div class="block-milestone block-milestone-1 milestone-finish">
@@ -384,7 +397,7 @@
                 <img src="images/upload/icon_ngu_phap.png" alt="">
                 <h3>Phần 7</h3>
               </div>
-              <a href="#" class="button-link style-1">Luyện</a>
+              <a href="#" class="button-link style-1 hidden-md hidden-lg">Luyện</a>
             </div>
             <div class="progress-wrapper">
               <div class="progress">
@@ -402,14 +415,15 @@
                 </span>
               </p>
             </div>
+            <a href="#" class="button-link style-1 hidden-sm hidden-xs">Luyện</a>
           </div>
           <div class="block-milestone">
             <div class="inner">
               <div class="name">
                 <img src="images/upload/icon_ngu_phap.png" alt="">
-                <h3>Phần 7</h3>
+                <h3>Phần 2</h3>
               </div>
-              <a href="#" class="button-link style-1">Luyện</a>
+              <a href="#" class="button-link style-1 hidden-md hidden-lg">Luyện</a>
             </div>
             <div class="progress-wrapper">
               <div class="progress">
@@ -420,7 +434,14 @@
                 <span class="sr-only">30% Complete</span>
                 </div>
               </div>
+              <p class="target">Mục tiêu: <span class="taget-point">Z%</span>
+                <span class="target-tooltip">
+                  <img src="images/icon_question.png" alt="">
+                  <span>Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có nghĩa là làm 10 câu thì làm đúng 5 câu.</span>
+                </span>
+              </p>
             </div>
+            <a href="#" class="button-link style-1 hidden-sm hidden-xs">Luyện</a>
           </div>
           <div class="block-milestone">
             <div class="inner">
@@ -428,7 +449,7 @@
                 <img src="images/upload/icon_ngu_phap.png" alt="">
                 <h3>Phần 7</h3>
               </div>
-              <img src="images/icon_check.png" alt="">
+              <img src="images/icon_check.png" alt="" class="hidden-md hidden-lg">
             </div>
             <div class="progress-wrapper">
               <div class="progress">
@@ -439,7 +460,14 @@
                 <span class="sr-only">100% Complete</span>
                 </div>
               </div>
+              <p class="target">Mục tiêu: <span class="taget-point">Z%</span>
+                <span class="target-tooltip">
+                  <img src="images/icon_question.png" alt="">
+                  <span>Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có nghĩa là làm 10 câu thì làm đúng 5 câu.</span>
+                </span>
+              </p>
             </div>
+            <img src="images/icon_check.png" alt="" class="hidden-sm hidden-xs icon-check-finish">
           </div>
           </div>
           <div class="toeic-milestone-item">
@@ -451,31 +479,33 @@
             Để vượt qua cột mốc này, bạn cần học các
             chủ đề ngữ pháp dưới đây
           </div>
-          <div class="block-milestone">
-            <div class="inner">
-              <div class="name">
-                <img src="images/upload/icon_ngu_phap.png" alt="">
-                <h3>Danh từ</h3>
+          <div class="milestone-grammar-wrapper">
+            <div class="block-milestone milestone-grammar">
+              <div class="inner">
+                <div class="name">
+                  <img src="images/upload/icon_ngu_phap.png" alt="">
+                  <h3>Danh từ</h3>
+                </div>
+                <a href="#" class="button-link style-1">học</a>
               </div>
-              <a href="#" class="button-link style-1">học</a>
             </div>
-          </div>
-          <div class="block-milestone">
-            <div class="inner">
-              <div class="name">
-                <img src="images/upload/icon_ngu_phap.png" alt="">
-                <h3>Động từ</h3>
+            <div class="block-milestone milestone-grammar">
+              <div class="inner">
+                <div class="name">
+                  <img src="images/upload/icon_ngu_phap.png" alt="">
+                  <h3>Động từ</h3>
+                </div>
+                <a href="#" class="button-link style-1">học</a>
               </div>
-              <a href="#" class="button-link style-1">học</a>
             </div>
-          </div>
-          <div class="block-milestone">
-            <div class="inner">
-              <div class="name">
-                <img src="images/upload/icon_ngu_phap.png" alt="">
-                <h3>Đại từ</h3>
+            <div class="block-milestone milestone-grammar">
+              <div class="inner">
+                <div class="name">
+                  <img src="images/upload/icon_ngu_phap.png" alt="">
+                  <h3>Đại từ</h3>
+                </div>
+                <img src="images/icon_check.png" alt="">
               </div>
-              <img src="images/icon_check.png" alt="">
             </div>
           </div>
         </div>
@@ -488,31 +518,33 @@
             Để vượt qua cột mốc này, bạn cần học các
             chủ đề ngữ pháp dưới đây
           </div>
-          <div class="block-milestone">
-            <div class="inner">
-              <div class="name">
-                <img src="images/upload/icon_ngu_phap.png" alt="">
-                <h3>Accounting</h3>
+          <div class="milestone-grammar-wrapper">
+            <div class="block-milestone milestone-grammar">
+              <div class="inner">
+                <div class="name">
+                  <img src="images/upload/icon_ngu_phap.png" alt="">
+                  <h3>Accounting</h3>
+                </div>
+                <a href="#" class="button-link style-1">học</a>
               </div>
-              <a href="#" class="button-link style-1">học</a>
             </div>
-          </div>
-          <div class="block-milestone">
-            <div class="inner">
-              <div class="name">
-                <img src="images/upload/icon_ngu_phap.png" alt="">
-                <h3>Computer</h3>
+            <div class="block-milestone milestone-grammar">
+              <div class="inner">
+                <div class="name">
+                  <img src="images/upload/icon_ngu_phap.png" alt="">
+                  <h3>Computer</h3>
+                </div>
+                <img src="images/icon_check.png" alt="">
               </div>
-              <img src="images/icon_check.png" alt="">
             </div>
-          </div>
-          <div class="block-milestone">
-            <div class="inner">
-              <div class="name">
-                <img src="images/upload/icon_ngu_phap.png" alt="">
-                <h3>Food</h3>
+            <div class="block-milestone milestone-grammar">
+              <div class="inner">
+                <div class="name">
+                  <img src="images/upload/icon_ngu_phap.png" alt="">
+                  <h3>Food</h3>
+                </div>
+                <a href="#" class="button-link style-1">học</a>
               </div>
-              <a href="#" class="button-link style-1">học</a>
             </div>
           </div>
           </div>
@@ -772,6 +804,342 @@
              </ul>
            </div>
          </section>
+         <section class="block-charts block-charts-tab">
+         <span class="flag"><img src="images/upload/icon_bxh_1.png" alt="bxh"></span>
+         <h3 class="chart-title">Bảng xếp hạng</h3>
+         <!-- Nav tabs -->
+ 				<ul class="nav nav-tabs nav-tabs-charts" role="tablist">
+ 					<li role="presentation" class="active"><a href="#home1" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true"><span>Home</span></a></li>
+ 					<li role="presentation" class=""><a href="#profile1" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false"><span>Profile</span></a></li>
+ 				</ul>
+ 			  <div class="tab-content tab-content-charts">
+ 			    <div role="tabpanel" class="tab-pane active" id="home1">
+ 		        <div class="chart-list">
+ 		          <ul>
+ 		            <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">1</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_1.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_online.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Tuấn Anh</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                  <a href="#" class="user-button">Tài khoản tự luyện</a>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+ 		            <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">2</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_4.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_offline.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Ngọc</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                  <a href="#" class="user-button">Tài khoản tự luyện</a>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+ 		            <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">3</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_3.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_online.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Emily</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                  <a href="#" class="user-button">Tài khoản tự luyện</a>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+ 		            <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">4</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_2.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_online.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Ngọc Mai</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+ 		            <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">5</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_3.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_offline.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Trung</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                  <a href="#" class="user-button">Tài khoản tự luyện</a>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+                <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">6</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_3.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_offline.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Trung</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                  <a href="#" class="user-button">Tài khoản tự luyện</a>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+                <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">7</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_3.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_offline.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Trung</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+                <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">8</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_3.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_offline.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Trung</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+                <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">9</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_3.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_offline.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Trung</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+                <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">10</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_3.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_offline.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Trung</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                  <a href="#" class="user-button">Tài khoản tự luyện</a>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+              </ul>
+ 		        </div>
+ 			    </div>
+ 			    <div role="tabpanel" class="tab-pane" id="profile1">
+ 			    	<div class="chart-list">
+ 		          <ul>
+ 		            <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">1</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_1.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_online.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Tuấn Anh 1</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                  <a href="#" class="user-button">Tài khoản tự luyện</a>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+ 		            <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">2</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_4.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_offline.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Ngọc</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                  <a href="#" class="user-button">Tài khoản tự luyện</a>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+ 		            <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">3</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_3.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_online.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Emily</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                  <a href="#" class="user-button">Tài khoản tự luyện</a>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+ 		            <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">4</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_2.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_online.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Ngọc Mai</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+ 		            <li>
+ 		              <div class="inner">
+ 		                <div class="item-left">
+ 		                  <span class="no chart-item">5</span>
+ 		                  <div class="user-info chart-item">
+ 		                    <div class="avt" title="Online">
+ 		                      <img src="images/upload/photo_bxh_3.jpg" alt="">
+ 		                      <span class="status"><img src="images/icon_offline.png" alt=""></span>
+ 		                    </div>
+ 		                  </div>
+ 		                  <div class="user-name chart-item">
+ 		                    <span class="name">Trung</span>
+ 		                    <img src="images/upload/icon_bxh_3.png" alt="" class="cup">
+ 		                  </div>
+ 		                </div>
+ 		                <div class="point item-right">
+ 		                  <span>6000</span>
+ 		                  <a href="#" class="user-button">Tài khoản tự luyện</a>
+ 		                </div>
+ 		              </div>
+ 		            </li>
+ 		          </ul>
+ 		        </div>
+ 		        <p class="btn-view-more">
+ 		          <a href="#" class="view-all">Xem tất cả &gt;</a>
+ 		        </p>
+ 			    </div>
+ 			  </div>
+       </section>
          <section class="block-charts">
            <span class="flag"><img src="images/upload/icon_bxh_2.png" alt="bxh"></span>
            <h3 class="chart-title">Bảng xếp hạng <br> đề thi rút gọn <br> mới nhất</h3>
@@ -891,8 +1259,125 @@
              <a href="#" class="view-all">Xem tất cả ></a>
            </p>
          </section>
+	      </section>
        </div>
      </div>
+     <section class="block-milestone teacher-blog">
+      	<h2 class="learing-title">
+          Gia sư Toeic’s Blog
+        </h2>
+        <div class="list-blogs clearfix">
+        	<div class="highlight-blog col-blog pull-left">
+        		<a class="img" href="#" title="">
+        			<img src="images/upload/photo_blog.jpg" alt="" />
+        		</a>
+        		<h4><a href="#" title="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </a></h4>
+        		<p class="desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        		<ul class="like-comments">
+        			<li class="icon-like">20</li>
+        			<li class="icon-comment">10</li>
+        		</ul>
+        	</div>
+        	<div class="more-blogs col-blog pull-left">
+        		<div class="item">
+        			<a class="img" href="#" title="">
+        				<img src="images/upload/photo_blog.jpg" alt="" />
+        			</a>
+        			<div class="info">
+        				<h4>
+        					<a href="#" title="">Lorem Ipsum is simply dummy text.</a>
+        				</h4>
+        				<ul class="like-comments">
+		        			<li class="icon-like">20</li>
+        					<li class="icon-comment">10</li>
+		        		</ul>
+        			</div>
+        		</div>
+        		<div class="item">
+        			<a class="img" href="#" title="">
+        				<img src="images/upload/photo_blog.jpg" alt="" />
+        			</a>
+        			<div class="info">
+        				<h4>
+        					<a href="#" title="">Lorem Ipsum is simply dummy text.</a>
+        				</h4>
+        				<ul class="like-comments">
+		        			<li class="icon-like">20</li>
+        					<li class="icon-comment">10</li>
+		        		</ul>
+        			</div>
+        		</div>
+        		<div class="item">
+        			<a class="img" href="#" title="">
+        				<img src="images/upload/photo_blog.jpg" alt="" />
+        			</a>
+        			<div class="info">
+        				<h4>
+        					<a href="#" title="">Lorem Ipsum is simply dummy text.</a>
+        				</h4>
+        				<ul class="like-comments">
+		        			<li class="icon-like">20</li>
+        					<li class="icon-comment">10</li>
+		        		</ul>
+        			</div>
+        		</div>
+        		<div class="item">
+        			<a class="img" href="#" title="">
+        				<img src="images/upload/photo_blog.jpg" alt="" />
+        			</a>
+        			<div class="info">
+        				<h4>
+        					<a href="#" title="">Lorem Ipsum is simply dummy text.</a>
+        				</h4>
+        				<ul class="like-comments">
+		        			<li class="icon-like">20</li>
+        					<li class="icon-comment">10</li>
+		        		</ul>
+        			</div>
+        		</div>
+        		<div class="btn-more">
+        			<a href="#" title="">Đọc thêm ></a>
+        		</div>
+        	</div>
+        </div>
+      </section>
+    <div class="row"><div class="col-md-4 col-md-offset-8">
+      <section class="share-box">
+       <h2 class="learing-title">
+         Chia sẻ với bạn bè
+       </h2>
+       <div class="link-share"><a href="#" title="">Link để chia sẻ với bạn bè</a></div>
+       <div class="copy-link">
+         <!-- Target -->
+         <input id="foo" value="https://github.com/zenorocha/clipboard.js.git">
+
+         <!-- Trigger -->
+         <button class="button-link style-1" data-clipboard-target="#foo">
+             copy
+         </button>
+       </div>
+       <h3 class="title">3 lý do nên chia sẻ với bạn bè</h3>
+       <ul class="reasons">
+         <li class="item">
+           <ul>
+             <li><span>1</span></li>
+             <li>Giúp nhiều bạn biết đến một cách luyện thi Toeic hiệu quả với chi phí hợp lý.</li>
+           </ul>
+         </li>
+         <li class="item">
+           <ul>
+             <li><span>2</span></li>
+             <li>Bạn sẽ được giảm 10% khi mua tài khoản.</li>
+           </ul>
+         </li>
+         <li class="item">
+           <ul>
+             <li><span>3</span></li>
+             <li>Bạn sẽ được thưởng 10% - thay lời cảm ơn của Gia sư Toeic.</li>
+           </ul>
+         </li>
+       </ul>
+    </div></div>
    </div>
    <footer>
       <div id="bottom">
@@ -996,12 +1481,23 @@
             </div>
           </div>
       </div>
-      </footer>
+    </footer>
+    <div data-stickbar class="stick-circle hidden-lg hidden-md">
+    	<div data-open class="icon-main"></div>
+    	<ul data-menu class="stick-navbar clearfix">
+    		<li><a data-item href="#a" title=""><img src="images/icon_nav_1.jpg" alt="" /></a></li>
+    		<li><a data-item href="#" title=""><img src="images/icon_nav_2.jpg" alt="" /></a></li>
+    		<li><a data-item href="#" title=""><img src="images/icon_nav_3.jpg" alt="" /></a></li>
+    		<li><a data-item href="#" title=""><img src="images/icon_nav_4.jpg" alt="" /></a></li>
+    		<li><a data-item href="#" title=""><img src="images/icon_nav_5.jpg" alt="" /></a></li>
+    	</ul>
     </div>
-    <script type="text/javascript" src="old/template-1956020317.js"></script>
+    </div>
+    <!-- <script type="text/javascript" src="old/template-1956020317.js"></script> -->
     <script type="text/javascript" src="scripts/bootstrap.js"></script>
   	<script type="text/javascript" src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
   	<script type="text/javascript" src="scripts/chart.js"></script>
+  	<script type="text/javascript" src="scripts/stickbar.js"></script>
   	<script type="text/javascript" src="scripts/main.js"></script>
     <noscript>
         &lt;div class="nof"&gt;GiasuTOEIC.com works best with JavaScript enabled! To use standard view, enable JavaScript by changing your browser options, then try again.&lt;/div&gt;

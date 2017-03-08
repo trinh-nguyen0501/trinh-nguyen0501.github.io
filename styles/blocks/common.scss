@@ -1,3 +1,13 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -22,6 +32,9 @@ a:hover {
   }
 }
 .learing-process {
+  @media only screen and (max-width: 991px) {
+    display: none;
+  }
   background-color: #fff;
   padding: 20px 5px 25px 15px;
   text-align: center;
@@ -114,6 +127,17 @@ a:hover {
         border-bottom: 12px solid transparent;
         right: -12px;
       }
+      .img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        @media only screen and (max-width: 991px) {
+          img {
+            max-width: 10px;
+          }
+        }
+      }
     }
   }
   @media only screen and (min-width: 992px) {
@@ -180,7 +204,7 @@ a:hover {
       position: absolute;
     }
     .value-min {
-      top: -25px;
+      bottom: -25px;
       left: 0px;
       color: #333;
     }
@@ -228,6 +252,7 @@ a:hover {
       margin: 0;
       padding-left: 13px;
       font-size: 15px;
+      font-family: "Roboto Medium";
     }
   }
   .button-link {

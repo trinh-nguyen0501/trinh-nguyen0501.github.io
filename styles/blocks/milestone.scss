@@ -1,5 +1,14 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
 .heading-milestone {
-  overflow: hidden;
+  // overflow: hidden;
   margin-bottom: 8px;
   .learing-title {
     float: left;
@@ -28,16 +37,55 @@
     }
   }
   .notif-show {
-    display: none;
+    display: block;
     position: absolute;
     right: 0;
-    top: 100%;
+    top: 11px;
+    z-index: 1;
+    color: #333333;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    &.active {
+    	opacity: 1;
+    	visibility: visible;
+    }
     .notif-list {
       width: 209px;
+      font-size: 14px;
+      line-height: 17px;
+      background: #fff;
+      box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
+      -webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			margin: 16px 0 0 0;
+			li {
+				padding: 10px 15px 9px 15px;
+				border-top: 1px solid #e9e9e9;
+				&:first-child {
+					border-top: none;
+				}
+				img {
+					padding-right: 15px;
+				}
+			}
+    }
+    .level {
+    	font-size: 12px;
+    	line-height: 15px;
+    	margin: 0;
+      span {
+        margin-left: 15px;
+      }
     }
   }
 }
 .milestone-process {
+  clear: both;
   margin-bottom: 20px;
   text-align: center;
   overflow: hidden;
@@ -112,7 +160,7 @@
 .milestone {
   padding-top: 15px;
   .learing-process {
-    clear: left;
+    clear: both;
     position: relative;
     .point-close {
       position: absolute;
@@ -188,6 +236,7 @@
         text-align: left;
         @include box-shadow(0 0 3px 0 rgba(0,0,0,0.3));
         background-color: #ebebeb;
+        z-index: 99;
         display: none;
         &:before {
           content: "";
@@ -204,6 +253,174 @@
       &:hover {
         > span {
           display: block;
+        }
+      }
+    }
+  }
+}
+.block-milestone.block-milestone-2 {
+  .learing-title {
+    margin-bottom: 15px;
+  }
+  .milestone-group {
+    .button-link {
+      display: block;
+    }
+    .name {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+  }
+  .name, .button-link {
+    float: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .learing-title {
+    text-align: left;
+  }
+  .milestone {
+    .learing-process {
+      margin-top: 50px;
+    }
+    .days-learning {
+      margin-top: 25px;
+    }
+  }
+  .block-milestone.block-milestone-1 {
+    > .inner {
+      padding: 40px 35px;
+    }
+    .name {
+      float: left;
+      margin: 35px 35px 0 0;
+    }
+    .milestone-group {
+      overflow: hidden;
+      .progress {
+        margin: 50px 0 45px;
+      }
+      .button-link {
+        display: inline-block;
+        min-width: 212px;
+      }
+    }
+  }
+  .block-milestone.block-milestone-2 {
+    .learing-title {
+      margin-bottom: 35px;
+    }
+    > .inner {
+      padding: 40px 35px;
+      > img {
+        float: left;
+        margin-right: 50px;
+      }
+    }
+    .milestone-group {
+      overflow: hidden;
+      width: 216px;
+    }
+  }
+  .block-milestone.block-milestone-1.milestone-finish {
+    text-align: center;
+    .name {
+      float: none;
+      margin: 10px 0 18px;
+      > img {
+        width: 112px;
+        height: 94px;
+      }
+    }
+    .learing-title {
+      text-align: center;
+    }
+    .button-link {
+      display: inline-block;
+      min-width: 300px;
+    }
+  }
+  .toeic-milestone {
+    padding: 40px 26px;
+    .learing-title {
+      margin-bottom: 20px;
+      div {
+        float: right;
+        margin-top: 0;
+      }
+    }
+    .milestone-desc {
+      margin-bottom: 20px;
+    }
+    .block-milestone {
+      // overflow: hidden;
+      margin-bottom: 25px;
+      margin-left: 10px;
+      margin-right: 10px;
+      &:hover {
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+      }
+      > .inner {
+        padding: 26px 0 26px 30px;
+      }
+      > .inner, .progress-wrapper, .button-link {
+        // float: left;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .name {
+        width: 125px;
+        margin-right: 35px;
+      }
+      .progress-wrapper {
+        width: 355px;
+        // margin-right: 20px;
+        margin-top: 10px;
+      }
+      .button-link {
+        width: 95px;
+        margin-top: 37px;
+        margin-right: 26px;
+      }
+      .icon-check-finish {
+        margin-left: 30px;
+      }
+    }
+    .toeic-milestone-item {
+      clear: both;
+      overflow: hidden;
+      padding: 10px 0;
+    }
+    .milestone-grammar-wrapper {
+      max-width: 530px;
+      margin: 0 auto;
+    }
+    .milestone-grammar {
+      float: left;
+      width: 150px;
+      min-height: 210px;
+      margin: 0 13px;
+      text-align: center;
+      &.block-milestone {
+        > .inner {
+          padding: 33px 25px;
+          > img {
+            float: none;
+            margin: 0;
+          }
+        }
+        .name, .button-link {
+          float: none;
+          width: auto;
+          margin: 0;
+        }
+        .name {
+          margin-bottom: 16px;
+          img {
+            margin-bottom: 15px;
+          }
         }
       }
     }
