@@ -7,7 +7,7 @@
   .heading-milestone .notif {
     float: right;
     position: relative;
-    padding: 8px;
+    padding: 5px;
     cursor: pointer; }
     .heading-milestone .notif > img {
       width: 20px;
@@ -125,16 +125,18 @@
         right: -20px; }
 
 .milestone {
-  padding-top: 15px; }
+  padding-top: 10px; }
+  @media only screen and (min-width: 992px) {
+    .milestone {
+      padding-top: 22px; } }
   .milestone .learing-process {
     clear: both;
-    position: relative; }
+    position: relative;
+    margin-bottom: 20px; }
     .milestone .learing-process .point-close {
       position: absolute;
       top: -11px;
       right: 10px; }
-  .milestone .days-learning {
-    margin: 14px 0; }
   @media only screen and (min-width: 992px) {
     .milestone {
       text-align: center; } }
@@ -163,48 +165,50 @@
       float: right;
       margin-top: 13px;
       margin-right: 10px; }
-  .toeic-milestone .block-milestone .progress-wrapper {
-    padding: 0 15px 25px; }
-  .toeic-milestone .block-milestone .progress {
-    margin-bottom: 2px; }
-  .toeic-milestone .target {
-    font-size: 12px;
-    text-align: right;
-    font-family: "Roboto-Medium";
-    margin-bottom: 0; }
-    .toeic-milestone .target .taget-point {
-      font-size: 14px; }
-    .toeic-milestone .target img {
-      margin-left: 3px; }
-    .toeic-milestone .target .target-tooltip {
-      position: relative; }
-      .toeic-milestone .target .target-tooltip > span {
-        width: 185px;
+
+.progress-wrapper {
+  padding: 0 15px 25px; }
+  .progress-wrapper .progress {
+    margin-bottom: 2px !important; }
+
+.progress-wrapper .target {
+  font-size: 12px;
+  text-align: right;
+  font-family: "Roboto-Medium";
+  margin-bottom: 0; }
+  .progress-wrapper .target .taget-point {
+    font-size: 14px; }
+  .progress-wrapper .target img {
+    margin-left: 3px; }
+  .progress-wrapper .target .target-tooltip {
+    position: relative; }
+    .progress-wrapper .target .target-tooltip > span {
+      width: 185px;
+      position: absolute;
+      right: -12px;
+      top: 25px;
+      font-size: 10px;
+      color: #666;
+      padding: 7px;
+      text-align: left;
+      -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+      background-color: #ebebeb;
+      z-index: 99;
+      display: none; }
+      .progress-wrapper .target .target-tooltip > span:before {
+        content: "";
         position: absolute;
-        right: -25px;
-        top: 25px;
-        font-size: 10px;
-        color: #666;
-        padding: 7px;
-        text-align: left;
-        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-        -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-        background-color: #ebebeb;
-        z-index: 99;
-        display: none; }
-        .toeic-milestone .target .target-tooltip > span:before {
-          content: "";
-          position: absolute;
-          top: -8px;
-          right: 25px;
-          width: 0px;
-          height: 0px;
-          border-left: 8px solid transparent;
-          border-right: 8px solid transparent;
-          border-bottom: 8px solid #ebebeb; }
-      .toeic-milestone .target .target-tooltip:hover > span {
-        display: block; }
+        top: -8px;
+        right: 10px;
+        width: 0px;
+        height: 0px;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid #ebebeb; }
+    .progress-wrapper .target .target-tooltip:hover > span {
+      display: block; }
 
 .block-milestone.block-milestone-2 .learing-title {
   margin-bottom: 15px; }
@@ -221,12 +225,12 @@
     text-align: left; }
 
   .milestone .learing-process {
-    margin-top: 50px; }
+    margin-top: 45px; }
   .milestone .days-learning {
-    margin-top: 25px; }
+    margin-top: -15px; }
 
   .block-milestone.block-milestone-1 > .inner {
-    padding: 40px 35px; }
+    padding: 38px 35px; }
   .block-milestone.block-milestone-1 .name {
     float: left;
     margin: 35px 35px 0 0; }
@@ -241,19 +245,20 @@
   .block-milestone.block-milestone-2 .learing-title {
     margin-bottom: 35px; }
   .block-milestone.block-milestone-2 > .inner {
-    padding: 40px 35px; }
+    padding: 50px 35px; }
     .block-milestone.block-milestone-2 > .inner > img {
       float: left;
       margin-right: 50px; }
   .block-milestone.block-milestone-2 .milestone-group {
     overflow: hidden;
-    width: 216px; }
+    width: 216px;
+    margin: 0 auto; }
 
   .block-milestone.block-milestone-1.milestone-finish {
     text-align: center; }
     .block-milestone.block-milestone-1.milestone-finish .name {
       float: none;
-      margin: 10px 0 18px; }
+      margin: 10px 0 15px; }
       .block-milestone.block-milestone-1.milestone-finish .name > img {
         width: 112px;
         height: 94px; }
@@ -300,7 +305,7 @@
     .toeic-milestone .toeic-milestone-item {
       clear: both;
       overflow: hidden;
-      padding: 10px 0; }
+      padding: 16px 0; }
     .toeic-milestone .milestone-grammar-wrapper {
       max-width: 530px;
       margin: 0 auto; }

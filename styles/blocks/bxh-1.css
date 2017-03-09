@@ -77,7 +77,8 @@
     margin-top: 6px; }
     .block-charts .point span {
       font-size: 14px;
-      display: block; }
+      display: block;
+      font-family: "Roboto-Bold"; }
     .block-charts .point .user-button {
       font-size: 10px;
       color: #fff;

@@ -12,6 +12,32 @@
 			list-style: none;
 		}
 	}
+	.more-info {
+		margin-top: 30px;
+		text-align: center;
+		li {
+			+ li {
+				margin-top: 18px;
+			}
+			span {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				text-align: center;
+				color: #fff;
+				background-color: #87c52e;
+				padding: 11px 0;
+				margin-left: 10px;
+				font-family: "Roboto-Bold";
+			}
+			.button-link {
+				border-radius: 20px;
+				text-transform: capitalize;
+				min-width: 250px;
+			}
+		}
+	}
 	.title {
 		margin: 21px 0 0 0;
 		font-size: 16px;
@@ -81,9 +107,9 @@
 		}
 	}
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 	.share-box {
-		padding: 23px 0 32px 18px;
+		padding: 23px 20px 32px 18px;
 		.link-share {
 			text-align: center;
 			padding: 19px 0 0 0;

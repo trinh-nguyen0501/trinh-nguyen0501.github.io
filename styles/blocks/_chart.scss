@@ -1,6 +1,9 @@
 .block-chart {
 	padding: 25px 29px;
 	background-color: #fff;
+	.learing-title {
+		margin-bottom: 20px;
+	}
 }
 .chart {
 	width: 100%;
@@ -42,10 +45,12 @@
 					&:hover,
 					&:focus {
 						border: none;
+						background-color: transparent;
 					}
 					.text {
 						background: #ff6045;
 						color: #fff;
+						margin-bottom: 2px;
 					}
 				}
 			}
@@ -76,7 +81,7 @@
 					span {
 						&.fill {
 							.percent {
-								background: #ebebeb;
+								// background: #ebebeb;
 							}
  						}
 					}
@@ -141,6 +146,7 @@
 		}
 		&.button-next {
 			right: -15px;
+			top: 100px;
 		}
 		&.button-prev {
 			left: -15px;
@@ -177,6 +183,8 @@
 		padding: 14px 0 13px 26px;
 		position: relative;
 		background: #404040;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
 		&:after {
 			content: '';
 			width: 26px;
@@ -219,7 +227,7 @@
 			}
 		}
 		.tbl {
-			max-height: 110px;
+			max-height: 130px;
 			overflow: auto;
 		}
 		tbody {

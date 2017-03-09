@@ -18,7 +18,7 @@
   .notif {
     float: right;
     position: relative;
-    padding: 8px;
+    padding: 5px;
     cursor: pointer;
     > img {
       @include size(20px);
@@ -158,18 +158,19 @@
   }
 }
 .milestone {
-  padding-top: 15px;
+  padding-top: 10px;
+  @media only screen and (min-width: 992px) {
+    padding-top: 22px;
+  }
   .learing-process {
     clear: both;
     position: relative;
+    margin-bottom: 20px;
     .point-close {
       position: absolute;
       top: -11px;
       right: 10px;
     }
-  }
-  .days-learning {
-    margin: 14px 0;
   }
   @media only screen and (min-width: 992px) {
     text-align: center;
@@ -205,55 +206,55 @@
         margin-right: 10px;
       }
     }
-    .progress-wrapper {
-      padding: 0 15px 25px;
-    }
-    .progress {
-      margin-bottom: 2px;
-    }
   }
-  .target {
-    font-size: 12px;
-    text-align: right;
-    font-family: "Roboto-Medium";
-    margin-bottom: 0;
-    .taget-point {
-      font-size: 14px;
-    }
-    img {
-      margin-left: 3px;
-    }
-    .target-tooltip {
-      position: relative;
-      > span {
-        width: 185px;
+}
+.progress-wrapper {
+  padding: 0 15px 25px;
+  .progress {
+    margin-bottom: 2px !important;
+  }
+}
+.progress-wrapper .target {
+  font-size: 12px;
+  text-align: right;
+  font-family: "Roboto-Medium";
+  margin-bottom: 0;
+  .taget-point {
+    font-size: 14px;
+  }
+  img {
+    margin-left: 3px;
+  }
+  .target-tooltip {
+    position: relative;
+    > span {
+      width: 185px;
+      position: absolute;
+      right: -12px;
+      top: 25px;
+      font-size: 10px;
+      color: #666;
+      padding: 7px;
+      text-align: left;
+      @include box-shadow(0 0 3px 0 rgba(0,0,0,0.3));
+      background-color: #ebebeb;
+      z-index: 99;
+      display: none;
+      &:before {
+        content: "";
         position: absolute;
-        right: -25px;
-        top: 25px;
-        font-size: 10px;
-        color: #666;
-        padding: 7px;
-        text-align: left;
-        @include box-shadow(0 0 3px 0 rgba(0,0,0,0.3));
-        background-color: #ebebeb;
-        z-index: 99;
-        display: none;
-        &:before {
-          content: "";
-          position: absolute;
-          top: -8px;
-          right: 25px;
-          width: 0px;
-          height: 0px;
-          border-left: 8px solid transparent;
-          border-right: 8px solid transparent;
-          border-bottom: 8px solid #ebebeb;
-        }
+        top: -8px;
+        right: 10px;
+        width: 0px;
+        height: 0px;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid #ebebeb;
       }
-      &:hover {
-        > span {
-          display: block;
-        }
+    }
+    &:hover {
+      > span {
+        display: block;
       }
     }
   }
@@ -281,15 +282,15 @@
   }
   .milestone {
     .learing-process {
-      margin-top: 50px;
+      margin-top: 45px;
     }
     .days-learning {
-      margin-top: 25px;
+      margin-top: -15px;
     }
   }
   .block-milestone.block-milestone-1 {
     > .inner {
-      padding: 40px 35px;
+      padding: 38px 35px;
     }
     .name {
       float: left;
@@ -311,7 +312,7 @@
       margin-bottom: 35px;
     }
     > .inner {
-      padding: 40px 35px;
+      padding: 50px 35px;
       > img {
         float: left;
         margin-right: 50px;
@@ -320,13 +321,14 @@
     .milestone-group {
       overflow: hidden;
       width: 216px;
+      margin: 0 auto;
     }
   }
   .block-milestone.block-milestone-1.milestone-finish {
     text-align: center;
     .name {
       float: none;
-      margin: 10px 0 18px;
+      margin: 10px 0 15px;
       > img {
         width: 112px;
         height: 94px;
@@ -391,7 +393,7 @@
     .toeic-milestone-item {
       clear: both;
       overflow: hidden;
-      padding: 10px 0;
+      padding: 16px 0;
     }
     .milestone-grammar-wrapper {
       max-width: 530px;

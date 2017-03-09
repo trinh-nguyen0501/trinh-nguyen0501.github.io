@@ -208,7 +208,7 @@
 
   $.fn[pluginName].defaults = {
     eleChartList: 'data-chart-list',
-    items: 7
+    items: 14
   };
 
   $(function() {

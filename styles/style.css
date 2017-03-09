@@ -1,3 +1,9 @@
+section {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 5px; }
+
 a:hover {
   text-decoration: none; }
 
@@ -12,11 +18,17 @@ a:hover {
   min-width: 280px;
   color: #fff;
   background-color: #404040;
-  padding: 12px 20px; }
-  .days-learning > img {
+  padding: 5px 20px; }
+  .days-learning img {
     margin-left: 5px; }
   .days-learning > span {
     margin-right: 2px; }
+  @media only screen and (max-width: 991px) {
+    .days-learning {
+      background-color: transparent;
+      min-width: 1px; }
+      .days-learning .dl-mobile .no {
+        left: 45px; } }
 
 .learing-process {
   background-color: #fff;
@@ -41,7 +53,7 @@ a:hover {
       .learing-process .process-list li:first-child {
         margin-left: 20px; }
         .learing-process .process-list li:first-child > span:first-child {
-          left: -40px;
+          left: -35px;
           right: auto; }
       .learing-process .process-list li .flag {
         position: absolute;
@@ -133,7 +145,7 @@ a:hover {
   padding: 15px 12px;
   text-align: center;
   border-radius: 5px;
-  transition: opacity .3s linear;
+  transition: background-color .3s linear;
   margin-bottom: 10px; }
   .button-link.style-1 {
     display: inline-block;
@@ -141,7 +153,7 @@ a:hover {
     padding: 8px 12px; }
   .button-link:hover {
     color: #fff;
-    opacity: .8; }
+    background-color: #2d96c8; }
 
 .progress {
   background-color: #ebebeb;
@@ -206,7 +218,7 @@ a:hover {
       margin: 0;
       padding-left: 13px;
       font-size: 15px;
-      font-family: "Roboto Medium"; }
+      font-family: "Roboto-Medium"; }
   .block-milestone .button-link {
     float: right;
     margin-top: 10px; }
@@ -234,12 +246,14 @@ a:hover {
       top: 0;
       height: 100%;
       width: 52px;
-      padding: 12px 0;
+      padding: 14px 0;
+      text-align: center;
       background-color: #71b200;
       border-radius: 5px; }
   .block-milestone.block-milestone-1.milestone-finish .name > img {
     width: 96px;
-    height: 81px; }
+    height: 81px;
+    border-radius: 0; }
 
 .view-all {
   display: inline-block;
@@ -325,6 +339,8 @@ a:hover {
 .block-chart {
   padding: 25px 29px;
   background-color: #fff; }
+  .block-chart .learing-title {
+    margin-bottom: 20px; }
 
 .chart {
   width: 100%;
@@ -358,16 +374,16 @@ a:hover {
         border: none;
         background: transparent; }
         .chart ul li.active a:hover, .chart ul li.active a:focus, .chart ul li:hover a:hover, .chart ul li:hover a:focus, .chart ul li:focus a:hover, .chart ul li:focus a:focus {
-          border: none; }
+          border: none;
+          background-color: transparent; }
         .chart ul li.active a .text, .chart ul li:hover a .text, .chart ul li:focus a .text {
           background: #ff6045;
-          color: #fff; }
+          color: #fff;
+          margin-bottom: 2px; }
       .chart ul li.active a span.fill .percent {
         background: #33abe5; }
       .chart ul li:nth-child(odd).active a span.fill .percent {
         background: #33abe5; }
-      .chart ul li:nth-child(odd) a span.fill .percent {
-        background: #ebebeb; }
       .chart ul li a {
         color: #999999;
         border: none;
@@ -413,7 +429,8 @@ a:hover {
     .chart .button-chart.disable:after {
       opacity: 0.5; }
     .chart .button-chart.button-next {
-      right: -15px; }
+      right: -15px;
+      top: 100px; }
     .chart .button-chart.button-prev {
       left: -15px; }
       .chart .button-chart.button-prev:after {
@@ -442,7 +459,9 @@ a:hover {
   text-align: left;
   padding: 14px 0 13px 26px;
   position: relative;
-  background: #404040; }
+  background: #404040;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
   .block-chart h3:after {
     content: '';
     width: 26px;
@@ -479,7 +498,7 @@ a:hover {
     .block-chart .tab-content th:first-child {
       border-left: none; }
   .block-chart .tab-content .tbl {
-    max-height: 110px;
+    max-height: 130px;
     overflow: auto; }
   .block-chart .tab-content tbody tr:first-child td {
     border-top: none; }
@@ -608,7 +627,8 @@ a:hover {
     margin-top: 6px; }
     .block-charts .point span {
       font-size: 14px;
-      display: block; }
+      display: block;
+      font-family: "Roboto-Bold"; }
     .block-charts .point .user-button {
       font-size: 10px;
       color: #fff;
@@ -663,7 +683,7 @@ a:hover {
   .heading-milestone .notif {
     float: right;
     position: relative;
-    padding: 8px;
+    padding: 5px;
     cursor: pointer; }
     .heading-milestone .notif > img {
       width: 20px;
@@ -781,16 +801,18 @@ a:hover {
         right: -20px; }
 
 .milestone {
-  padding-top: 15px; }
+  padding-top: 10px; }
+  @media only screen and (min-width: 992px) {
+    .milestone {
+      padding-top: 22px; } }
   .milestone .learing-process {
     clear: both;
-    position: relative; }
+    position: relative;
+    margin-bottom: 20px; }
     .milestone .learing-process .point-close {
       position: absolute;
       top: -11px;
       right: 10px; }
-  .milestone .days-learning {
-    margin: 14px 0; }
   @media only screen and (min-width: 992px) {
     .milestone {
       text-align: center; } }
@@ -819,48 +841,50 @@ a:hover {
       float: right;
       margin-top: 13px;
       margin-right: 10px; }
-  .toeic-milestone .block-milestone .progress-wrapper {
-    padding: 0 15px 25px; }
-  .toeic-milestone .block-milestone .progress {
-    margin-bottom: 2px; }
-  .toeic-milestone .target {
-    font-size: 12px;
-    text-align: right;
-    font-family: "Roboto-Medium";
-    margin-bottom: 0; }
-    .toeic-milestone .target .taget-point {
-      font-size: 14px; }
-    .toeic-milestone .target img {
-      margin-left: 3px; }
-    .toeic-milestone .target .target-tooltip {
-      position: relative; }
-      .toeic-milestone .target .target-tooltip > span {
-        width: 185px;
+
+.progress-wrapper {
+  padding: 0 15px 25px; }
+  .progress-wrapper .progress {
+    margin-bottom: 2px !important; }
+
+.progress-wrapper .target {
+  font-size: 12px;
+  text-align: right;
+  font-family: "Roboto-Medium";
+  margin-bottom: 0; }
+  .progress-wrapper .target .taget-point {
+    font-size: 14px; }
+  .progress-wrapper .target img {
+    margin-left: 3px; }
+  .progress-wrapper .target .target-tooltip {
+    position: relative; }
+    .progress-wrapper .target .target-tooltip > span {
+      width: 185px;
+      position: absolute;
+      right: -12px;
+      top: 25px;
+      font-size: 10px;
+      color: #666;
+      padding: 7px;
+      text-align: left;
+      -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+      background-color: #ebebeb;
+      z-index: 99;
+      display: none; }
+      .progress-wrapper .target .target-tooltip > span:before {
+        content: "";
         position: absolute;
-        right: -25px;
-        top: 25px;
-        font-size: 10px;
-        color: #666;
-        padding: 7px;
-        text-align: left;
-        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-        -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-        background-color: #ebebeb;
-        z-index: 99;
-        display: none; }
-        .toeic-milestone .target .target-tooltip > span:before {
-          content: "";
-          position: absolute;
-          top: -8px;
-          right: 25px;
-          width: 0px;
-          height: 0px;
-          border-left: 8px solid transparent;
-          border-right: 8px solid transparent;
-          border-bottom: 8px solid #ebebeb; }
-      .toeic-milestone .target .target-tooltip:hover > span {
-        display: block; }
+        top: -8px;
+        right: 10px;
+        width: 0px;
+        height: 0px;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid #ebebeb; }
+    .progress-wrapper .target .target-tooltip:hover > span {
+      display: block; }
 
 .block-milestone.block-milestone-2 .learing-title {
   margin-bottom: 15px; }
@@ -877,12 +901,12 @@ a:hover {
     text-align: left; }
 
   .milestone .learing-process {
-    margin-top: 50px; }
+    margin-top: 45px; }
   .milestone .days-learning {
-    margin-top: 25px; }
+    margin-top: -15px; }
 
   .block-milestone.block-milestone-1 > .inner {
-    padding: 40px 35px; }
+    padding: 38px 35px; }
   .block-milestone.block-milestone-1 .name {
     float: left;
     margin: 35px 35px 0 0; }
@@ -897,19 +921,20 @@ a:hover {
   .block-milestone.block-milestone-2 .learing-title {
     margin-bottom: 35px; }
   .block-milestone.block-milestone-2 > .inner {
-    padding: 40px 35px; }
+    padding: 50px 35px; }
     .block-milestone.block-milestone-2 > .inner > img {
       float: left;
       margin-right: 50px; }
   .block-milestone.block-milestone-2 .milestone-group {
     overflow: hidden;
-    width: 216px; }
+    width: 216px;
+    margin: 0 auto; }
 
   .block-milestone.block-milestone-1.milestone-finish {
     text-align: center; }
     .block-milestone.block-milestone-1.milestone-finish .name {
       float: none;
-      margin: 10px 0 18px; }
+      margin: 10px 0 15px; }
       .block-milestone.block-milestone-1.milestone-finish .name > img {
         width: 112px;
         height: 94px; }
@@ -956,7 +981,7 @@ a:hover {
     .toeic-milestone .toeic-milestone-item {
       clear: both;
       overflow: hidden;
-      padding: 10px 0; }
+      padding: 16px 0; }
     .toeic-milestone .milestone-grammar-wrapper {
       max-width: 530px;
       margin: 0 auto; }
@@ -985,7 +1010,7 @@ a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  padding: 44px 0 11px 0; }
+  padding: 44px 0 25px 0; }
   .teacher-blog .learing-title {
     padding: 0 32px; }
 
@@ -1148,6 +1173,26 @@ a:hover {
     padding: 0; }
     .share-box ul li {
       list-style: none; }
+  .share-box .more-info {
+    margin-top: 30px;
+    text-align: center; }
+    .share-box .more-info li + li {
+      margin-top: 18px; }
+    .share-box .more-info li span {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      color: #fff;
+      background-color: #87c52e;
+      padding: 11px 0;
+      margin-left: 10px;
+      font-family: "Roboto-Bold"; }
+    .share-box .more-info li .button-link {
+      border-radius: 20px;
+      text-transform: capitalize;
+      min-width: 250px; }
   .share-box .title {
     margin: 21px 0 0 0;
     font-size: 16px;
@@ -1204,9 +1249,9 @@ a:hover {
     .share-box .copy-link .button-link {
       border: 0; }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .share-box {
-    padding: 23px 0 32px 18px; }
+    padding: 23px 20px 32px 18px; }
     .share-box .link-share {
       text-align: center;
       padding: 19px 0 0 0; }
@@ -1268,12 +1313,17 @@ a:hover {
     z-index: 4; }
 
 .block-charts.block-charts-tab {
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  background-color: #fff; }
   .block-charts.block-charts-tab .chart-list > ul {
     padding-bottom: 25px;
-    background-color: #fff; }
+    background-color: #fff;
+    border-radius: 5px; }
   .block-charts.block-charts-tab .chart-list:before {
     height: 88%; }
+
+.block-charts .tab-content-charts .chart-list > ul li:hover {
+  background-color: #f6f6f6; }
 
 .nav-tabs-charts {
   padding: 0 8px;
@@ -1306,7 +1356,8 @@ a:hover {
 
 .block-charts .tab-content-charts {
   background: #fff;
-  padding: 10px 0 0 0; }
+  padding: 10px 0 0 0;
+  border-radius: 5px; }
   .block-charts .tab-content-charts .chart-list {
     margin: 0; }
 
