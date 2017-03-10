@@ -1,9 +1,0 @@
-@mixin size($width, $height: $width) {
-  width: $width;
-  height: $height;
-}
-@mixin box-shadow($shadow) {
-  -webkit-box-shadow: $shadow;
-  -moz-box-shadow: $shadow;
-  box-shadow: $shadow;
-}

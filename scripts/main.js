@@ -19,12 +19,13 @@ function Page(){
 			$('[data-scroll]').mCustomScrollbar();
 		}
 
-		$('.heading-milestone .notif').click(function(){
-			if($(this).hasClass('active')){
-				$(this).removeClass('active');
+		$('.heading-milestone .notif > img').click(function(){
+			var notif = $('.heading-milestone .notif');
+			if(notif.hasClass('active')){
+				notif.removeClass('active');
 				$(this).parent().find('.notif-show').removeClass('active');
 			}else{
-				$(this).addClass('active');
+				notif.addClass('active');
 				$(this).parent().find('.notif-show').addClass('active');
 			}
 		});

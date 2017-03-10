@@ -7,8 +7,8 @@
   -moz-box-shadow: $shadow;
   box-shadow: $shadow;
 }
-section {
-  @include box-shadow(0px 0px 15px 0px rgba(0,0,0,0.3));
+section, .learing-process {
+  @include box-shadow(0px 0px 5px 0px rgba(0,0,0,0.3));
   border-radius: 5px;
 }
 a:hover {
@@ -36,6 +36,8 @@ a:hover {
   @media only screen and (max-width: 991px) {
     background-color: transparent;
     min-width: 1px;
+    padding-top: 0;
+    margin-top: -1px;
     .dl-mobile {
       .no {
         left: 45px;
