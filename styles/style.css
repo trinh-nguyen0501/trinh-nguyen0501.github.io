@@ -507,6 +507,10 @@ a:hover {
   text-align: center; }
   .block-chart .tab-content table {
     width: 100%; }
+    .block-chart .tab-content table tr:last-child td:first-child {
+      border-bottom-left-radius: 5px; }
+    .block-chart .tab-content table tr:last-child td:last-child {
+      border-bottom-right-radius: 5px; }
     @media only screen and (max-width: 991px) {
       .block-chart .tab-content table thead {
         display: none; } }
@@ -953,16 +957,18 @@ a:hover {
       min-width: 212px; }
 
   .block-milestone.block-milestone-2 .learing-title {
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+    float: left;
+    max-width: 70%; }
   .block-milestone.block-milestone-2 > .inner {
-    padding: 50px 35px; }
+    padding: 28px 35px; }
     .block-milestone.block-milestone-2 > .inner > img {
-      float: left;
-      margin-right: 50px; }
+      float: right; }
   .block-milestone.block-milestone-2 .milestone-group {
     overflow: hidden;
     width: 216px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    clear: both; }
 
   .block-milestone.block-milestone-1.milestone-finish {
     text-align: center; }

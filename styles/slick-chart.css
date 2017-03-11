@@ -1,5 +1,15 @@
 .slick-chart {
-  background: #f6f6f6;
+  /*background: #f6f6f6;*/
+}
+.slick-chart:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  background-color: #f6f6f6;
+  z-index: 0;
 }
 .slick-chart .tbl {
   display: table;
@@ -13,9 +23,18 @@
 }
 .slick-chart .item a {
   display: inline-block;
+  outline: none;
 }
 .slick-chart .item span {
   display: inline-block;
+}
+.slick-chart .item span.no {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  margin-top: -20px;
 }
 .slick-chart .item span.fill {
   max-width: 28px;

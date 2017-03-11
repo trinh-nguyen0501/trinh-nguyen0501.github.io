@@ -7,7 +7,6 @@
   -moz-box-shadow: $shadow;
   box-shadow: $shadow;
 }
-
 .heading-milestone {
   // overflow: hidden;
   margin-bottom: 8px;
@@ -314,18 +313,20 @@
   .block-milestone.block-milestone-2 {
     .learing-title {
       margin-bottom: 35px;
+      float: left;
+      max-width: 70%;
     }
     > .inner {
-      padding: 50px 35px;
+      padding: 28px 35px;
       > img {
-        float: left;
-        margin-right: 50px;
+        float: right;
       }
     }
     .milestone-group {
       overflow: hidden;
       width: 216px;
       margin: 0 auto;
+      clear: both;
     }
   }
   .block-milestone.block-milestone-1.milestone-finish {

@@ -203,6 +203,18 @@
 		text-align: center;
 		table {
 			width: 100%;
+			tr {
+				&:last-child {
+					td {
+						&:first-child {
+							border-bottom-left-radius: 5px;
+						}
+						&:last-child {
+						  border-bottom-right-radius: 5px;
+						}
+					}
+				}
+			}
 			@media only screen and (max-width: 991px) {
 				thead {
 					display: none;
