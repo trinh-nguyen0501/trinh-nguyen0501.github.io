@@ -29,6 +29,15 @@ function Page(){
 				$(this).parent().find('.notif-show').addClass('active');
 			}
 		});
+		$('.dl-mobile > img').click(function(){
+			if($('.dl-mobile .days-learning-mb').hasClass('active')){
+				$('.dl-mobile .days-learning-mb').removeClass('active');
+				$(this).parent().find('.days-learning-mb').removeClass('active');
+			}else{
+				$('.dl-mobile .days-learning-mb').addClass('active');
+				$(this).parent().find('.days-learning-mb').addClass('active');
+			}
+		});
 		$('.xem-lo-trinh').click(function(){
 			$('.learing-process').show();
 		});
