@@ -53,6 +53,44 @@ function Page(){
      		$('.heading-milestone .notif .no.active').trigger('click');
 	    }
 	});
+	// slick chart
+	if($('.slick-chart').length > 0) {
+		$('.slick-chart').on('init', function(event, slick){
+			var indexActive = $('.slick-chart .item.active').index();
+			slick.slickGoTo(indexActive);
+		});
+
+		$('.slick-chart').slick({
+		  dots: false,
+		  infinite: false,
+		  speed: 300,
+		  slidesToShow: 14,
+		  slidesToScroll: 7,
+		  arrows: true,
+		  responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 5,
+		        slidesToScroll: 5
+		      }
+		    }
+		  ]
+		});
+	}
+
+	$('[data-chart-tab]').click(function(){
+		if(!$(this).hasClass('active')) {
+			$(this).closest('.slick-chart').find('.item').removeClass('active');
+			$(this).parent().addClass('active');
+			var ele = $($(this).data('href'));
+
+			if(ele) {
+				$('[data-chart-tab]').find('.tab-pane').removeClass('active');
+				ele.addClass('active');
+			}
+		}
+	});
 }
 Page = new Page();
 $(document).ready(function() {

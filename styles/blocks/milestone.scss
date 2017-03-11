@@ -240,6 +240,7 @@
       @include box-shadow(0 0 3px 0 rgba(0,0,0,0.3));
       background-color: #ebebeb;
       z-index: 99;
+      border-radius: 5px;
       display: none;
       &:before {
         content: "";
@@ -424,6 +425,12 @@
           margin-bottom: 16px;
           img {
             margin-bottom: 15px;
+          }
+          @media only screen and (min-width: 992px) {
+            h3 {
+              padding-left: 0;
+              display: block;
+            }
           }
         }
       }
