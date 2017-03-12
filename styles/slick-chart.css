@@ -1,5 +1,5 @@
 .slick-chart {
-  /*background: #f6f6f6;*/
+  margin-right: -8px;
 }
 .slick-chart:before {
   content: '';
@@ -44,9 +44,6 @@
 }
 .slick-chart .item span.fill .percent {
   background: #d5d5d5;
-}
-.slick-chart .item:nth-child(odd) span.fill .percent {
-	background: #ebebeb;
 }
 .slick-chart .item:nth-child(odd).active span.fill .percent {
   background: #33abe5;

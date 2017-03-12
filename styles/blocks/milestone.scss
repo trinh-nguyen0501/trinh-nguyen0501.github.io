@@ -295,6 +295,10 @@
     > .inner {
       padding: 37px 35px;
     }
+    .button-link {
+      display: inline-block;
+      min-width: 212px;
+    }
     .name {
       float: left;
       margin: 35px 35px 0 0;
@@ -304,22 +308,20 @@
       .progress {
         margin: 50px 0 45px;
       }
-      .button-link {
-        display: inline-block;
-        min-width: 212px;
-      }
     }
   }
   .block-milestone.block-milestone-2 {
+    position: relative;
     .learing-title {
       margin-bottom: 35px;
       float: left;
       max-width: 70%;
     }
     > .inner {
-      padding: 28px 35px;
+      padding: 54px 35px;
       > img {
-        float: right;
+        position: absolute;
+        right: 35px;
       }
     }
     .milestone-group {
@@ -327,6 +329,9 @@
       width: 216px;
       margin: 0 auto;
       clear: both;
+      .button-link {
+        margin-bottom: 0;
+      }
     }
   }
   .block-milestone.block-milestone-1.milestone-finish {

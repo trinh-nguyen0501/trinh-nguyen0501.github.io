@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'size'.
-        on line 37 of /Users/trinhnguyen/trinh-nguyen0501/goc-hoc-tap/trinh-nguyen0501/styles/blocks/common.scss, in `size'
-        from line 37 of /Users/trinhnguyen/trinh-nguyen0501/goc-hoc-tap/trinh-nguyen0501/styles/blocks/common.scss
+        on line 37 of /Users/trinhnguyen/super_cute/styles/blocks/common.scss, in `size'
+        from line 37 of /Users/trinhnguyen/super_cute/styles/blocks/common.scss
 
 32:     list-style-type: none;
 33:     li {
@@ -16,8 +16,8 @@ Error: Undefined mixin 'size'.
 42:         margin-left: 20px;
 
 Backtrace:
-/Users/trinhnguyen/trinh-nguyen0501/goc-hoc-tap/trinh-nguyen0501/styles/blocks/common.scss:37:in `size'
-/Users/trinhnguyen/trinh-nguyen0501/goc-hoc-tap/trinh-nguyen0501/styles/blocks/common.scss:37
+/Users/trinhnguyen/super_cute/styles/blocks/common.scss:37:in `size'
+/Users/trinhnguyen/super_cute/styles/blocks/common.scss:37
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
@@ -88,4 +88,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'size'.\A         on line 37 of /Users/trinhnguyen/trinh-nguyen0501/goc-hoc-tap/trinh-nguyen0501/styles/blocks/common.scss, in `size'\A         from line 37 of /Users/trinhnguyen/trinh-nguyen0501/goc-hoc-tap/trinh-nguyen0501/styles/blocks/common.scss\A \A 32:     list-style-type: none;\A 33:     li {\A 34:       // float: left;\A 35:       display: inline-block;;\A 36:       position: relative;\A 37:       @include size(20px, 24px);\A 38:       background-color: #ebebeb;\A 39:       margin-right: 22px;\A 40:       margin-bottom: 35px;\A 41:       &:first-child {\A 42:         margin-left: 20px;"; }
+  content: "Error: Undefined mixin 'size'.\A         on line 37 of /Users/trinhnguyen/super_cute/styles/blocks/common.scss, in `size'\A         from line 37 of /Users/trinhnguyen/super_cute/styles/blocks/common.scss\A \A 32:     list-style-type: none;\A 33:     li {\A 34:       // float: left;\A 35:       display: inline-block;;\A 36:       position: relative;\A 37:       @include size(20px, 24px);\A 38:       background-color: #ebebeb;\A 39:       margin-right: 22px;\A 40:       margin-bottom: 35px;\A 41:       &:first-child {\A 42:         margin-left: 20px;"; }

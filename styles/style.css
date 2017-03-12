@@ -366,7 +366,7 @@ a:hover {
             color: #33abe5; }
 
 .block-chart {
-  padding: 25px 29px;
+  padding: 25px 34px 25px 24px;
   background-color: #fff; }
   .block-chart .learing-title {
     margin-bottom: 20px; }
@@ -945,6 +945,9 @@ a:hover {
 
   .block-milestone.block-milestone-1 > .inner {
     padding: 37px 35px; }
+  .block-milestone.block-milestone-1 .button-link {
+    display: inline-block;
+    min-width: 212px; }
   .block-milestone.block-milestone-1 .name {
     float: left;
     margin: 35px 35px 0 0; }
@@ -952,23 +955,25 @@ a:hover {
     overflow: hidden; }
     .block-milestone.block-milestone-1 .milestone-group .progress {
       margin: 50px 0 45px; }
-    .block-milestone.block-milestone-1 .milestone-group .button-link {
-      display: inline-block;
-      min-width: 212px; }
 
-  .block-milestone.block-milestone-2 .learing-title {
-    margin-bottom: 35px;
-    float: left;
-    max-width: 70%; }
-  .block-milestone.block-milestone-2 > .inner {
-    padding: 28px 35px; }
-    .block-milestone.block-milestone-2 > .inner > img {
-      float: right; }
-  .block-milestone.block-milestone-2 .milestone-group {
-    overflow: hidden;
-    width: 216px;
-    margin: 0 auto;
-    clear: both; }
+  .block-milestone.block-milestone-2 {
+    position: relative; }
+    .block-milestone.block-milestone-2 .learing-title {
+      margin-bottom: 35px;
+      float: left;
+      max-width: 70%; }
+    .block-milestone.block-milestone-2 > .inner {
+      padding: 54px 35px; }
+      .block-milestone.block-milestone-2 > .inner > img {
+        position: absolute;
+        right: 35px; }
+    .block-milestone.block-milestone-2 .milestone-group {
+      overflow: hidden;
+      width: 216px;
+      margin: 0 auto;
+      clear: both; }
+      .block-milestone.block-milestone-2 .milestone-group .button-link {
+        margin-bottom: 0; }
 
   .block-milestone.block-milestone-1.milestone-finish {
     text-align: center; }

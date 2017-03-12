@@ -34,31 +34,22 @@
       	eleMenu: ele.find('[data-menu]'),
       	itemMenu: ele.find('[data-item]')
       };
-      
+
       that.vars.buttonOpen.on('click.' + pluginName, function(){
       	if($(this).hasClass('active')) {
       		$(this).removeClass('active');
       		that.vars.eleMenu.removeClass('active');
 
-      		if($('.overplay').length > 0) {
-      			$('.overplay').remove();
-      		}
-
-      		$('html, body').removeClass('open-stickbar');
       	}else{
       		$(this).addClass('active');
       		that.vars.eleMenu.addClass('active');
-      		if(!$('.overplay').length) {
-      			$('body').append('<div class="overplay"></div>')
-      		}
-      		$('html, body').addClass('open-stickbar');
       	}
       });
 
       that.vars.itemMenu.on('click', function(e){
       	e.preventDefault();
       	var id = $(this).attr('href');
-      	
+
       	that.vars.buttonOpen.trigger('click');
 
       	if($(id).length > 0) {
@@ -89,7 +80,7 @@
   $.fn[pluginName].defaults = {
     eleChartList: 'data-chart-list',
     items: 7,
-    itemsMobile: 5, 
+    itemsMobile: 5,
     wMobile: 767
   };
 
