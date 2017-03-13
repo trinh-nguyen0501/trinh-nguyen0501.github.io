@@ -87,7 +87,9 @@ function Page(){
 
 			if(ele) {
 				$('[data-chart-content]').find('.tab-pane').removeClass('active');
+				$('[data-chart-content]').find('.tab-pane').removeClass('in');
 				ele.addClass('active');
+				ele.addClass('in');
 			}
 		}
 	});
