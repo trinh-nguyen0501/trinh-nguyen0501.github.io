@@ -83,10 +83,10 @@ function Page(){
 		if(!$(this).hasClass('active')) {
 			$(this).closest('.slick-chart').find('.item').removeClass('active');
 			$(this).parent().addClass('active');
-			var ele = $($(this).data('href'));
+			var ele = $($(this).data('id'));
 
 			if(ele) {
-				$('[data-chart-tab]').find('.tab-pane').removeClass('active');
+				$('[data-chart-content]').find('.tab-pane').removeClass('active');
 				ele.addClass('active');
 			}
 		}
