@@ -1529,9 +1529,6 @@ a:hover {
     .share-box .copy-link .button-link {
       border: 0;
       margin-top: 10px; }
-    @media only screen and (max-width: 991px) {
-      .share-box .copy-link input {
-        max-width: 150px; } }
 
 @media only screen and (max-width: 991px) {
   .share-box {
