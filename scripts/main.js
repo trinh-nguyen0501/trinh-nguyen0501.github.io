@@ -19,14 +19,14 @@ function Page(){
 			$('[data-scroll]').mCustomScrollbar();
 		}
 
-		$('.heading-milestone .notif > img').click(function(){
+		$('.heading-milestone .notif .icon-notif').click(function(){
 			var notif = $('.heading-milestone .notif');
 			if(notif.hasClass('active')){
 				notif.removeClass('active');
-				$(this).parent().find('.notif-show').removeClass('active');
+				$(this).parent().find('.notif-show').stop().slideUp();
 			}else{
 				notif.addClass('active');
-				$(this).parent().find('.notif-show').addClass('active');
+				$(this).parent().find('.notif-show').stop().slideDown();
 			}
 		});
 		$('.dl-mobile > img').click(function(){
@@ -38,11 +38,38 @@ function Page(){
 				$(this).parent().find('.days-learning-mb').addClass('active');
 			}
 		});
+		// click outside
+		$(document).mouseup(function (e) {
+		    var container1= $('.icon-notif'), container2 = $('.notif-show');
+
+		    if (!container1.is(e.target) && container1.has(e.target).length === 0 && !container2.is(e.target) && container2.has(e.target).length === 0)
+		    {
+		      if($('.heading-milestone .notif').hasClass('active')) {
+		      	$('.heading-milestone .notif .icon-notif').trigger('click');
+		      }
+		    }
+		});
 		$('.xem-lo-trinh').click(function(){
 			$('.learing-process').show();
 		});
 		$('.point-close').click(function(){
 			$('.learing-process').hide();
+		});
+		// delete notif item
+		$('.notif-list .icon-delete').click(function(){
+			$(this).closest('li').remove();
+		});
+		// click outside
+		$(document).mouseup(function (e) {
+		    var container = $('.dl-mobile');
+
+		    if (!container.is(e.target) // if the target of the click isn't the container...
+		        && container.has(e.target).length === 0) // ... nor a descendant of the container
+		    {
+		      if($('.dl-mobile .days-learning-mb').hasClass('active')) {
+		      	$('.dl-mobile > img').trigger('click');
+		      }
+		    }
 		});
 	}
 

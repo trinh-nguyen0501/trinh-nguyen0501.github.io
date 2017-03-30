@@ -58,6 +58,7 @@
     <link rel="stylesheet" href="styles/slick.css" />
     <link rel="stylesheet" href="styles/slick-theme.css" />
     <link rel="stylesheet" href="styles/slick-chart.css" />
+    <link rel="stylesheet" href="styles/font-awesome.min.css" />
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/jquery.mCustomScrollbar.min.css" />
@@ -240,22 +241,41 @@
          <div class="notif">
            <div class="days-learning">
              <div class="dl-desktop hidden-sm hidden-xs">
-               <span>Số ngày học liên tiếp: 2 ngày</span>
+               <a href="#" title="">Số ngày học liên tiếp</a><span>: 2 ngày</span>
                <img src="images/icon_fire.png" alt="Số ngày học liên tiếp">
                <img src="images/icon_fire.png" alt="Số ngày học liên tiếp">
              </div>
              <div class="dl-mobile hidden-lg hidden-md">
                <img src="images/icon_fire.png" alt="Số ngày học liên tiếp">
                <span class="no">2</span>
-               <p class="days-learning-mb"><span>Số ngày học liên tiếp: 2 ngày</span></p>
+               <p class="days-learning-mb"><a href="#" title="">Số ngày học liên tiếp</a><span>: 2 ngày</span></p>
              </div>
            </div>
-           <img src="images/icon_notif.png" alt="notification">
+           <!-- <img src="images/icon_notif.png" alt="notification" /> -->
+           <span class="icon-notif"></span>
            <span class="no">2</span>
            <div class="notif-show">
              <ul class="notif-list">
                <li><img src="images/icon_user.png" alt="">Lorem ipsum dolor</li>
                <li><img src="images/icon_mess.png" alt="">Morbi finibus sodales</li>
+               <li class="item">
+               	<a href="#" title="">
+               		<span class="small-col"><img src="images/icon_mess.png" alt=""></span>
+	               	<span>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus</span>
+	               	<span class="small-col">
+	               		<i class="fa fa-times icon-delete" aria-hidden="true"></i>
+	               	</span>
+               	</a>
+               </li>
+               <li class="item">
+               	<a href="#" title="">
+               		<span class="small-col"><img src="images/icon_mess.png" alt=""></span>
+	               	<span>Vivamus elementum semper nisi</span>
+	               	<span class="small-col">
+	               		<i class="fa fa-times icon-delete" aria-hidden="true"></i>
+	               	</span>
+               	</a>
+               </li>
              </ul>
            </div>
          </div>
@@ -328,7 +348,13 @@
                 <div class="progress-wrapper">
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                    <span class="value-min">X%</span>
+                    <span class="value-min target">
+                    	X%
+                    	<span class="target-tooltip">
+	                      <img src="images/icon_question.png" alt="">
+	                      <span>Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có nghĩa là làm 10 câu thì làm đúng 5 câu.</span>
+	                    </span>
+                  	</span>
                     <span class="value-current">Y%</span>
                     <span class="sr-only">30% Complete</span>
                     </div>
@@ -881,7 +907,7 @@
 
   					<div class="tab-content" data-chart-content>
   					  <div id="chart1" class="tab-pane fade in active">
-  					    <h3>Ngày 01/2</h3>
+  					    <h3>Ngày 01/2 <span>, bạn đã làm các đề luyện tập sau</span></h3>
   							<table>
   								<thead>
   									<tr>
@@ -895,6 +921,30 @@
   							<div data-scroll class="tbl custom-scroll">
   								<table class="border-radius">
   									<tbody>
+  										<tr>
+  											<td>Phần 2</td>
+  											<td>7/10</td>
+  											<td>13:50</td>
+  											<td><a href="#" title=""><span>Xem lại ></span></a></td>
+  										</tr>
+  										<tr>
+  											<td>Phần 2</td>
+  											<td>7/10</td>
+  											<td>13:50</td>
+  											<td><a href="#" title=""><span>Xem lại ></span></a></td>
+  										</tr>
+  										<tr>
+  											<td>Phần 2</td>
+  											<td>7/10</td>
+  											<td>13:50</td>
+  											<td><a href="#" title=""><span>Xem lại ></span></a></td>
+  										</tr>
+  										<tr>
+  											<td>Phần 2</td>
+  											<td>7/10</td>
+  											<td>13:50</td>
+  											<td><a href="#" title=""><span>Xem lại ></span></a></td>
+  										</tr>
   										<tr>
   											<td>Phần 2</td>
   											<td>7/10</td>
@@ -1035,7 +1085,13 @@
          </section>
          <section id="sec6" class="block-charts block-charts-tab">
          <span class="flag"><img src="images/upload/icon_ranking.png" alt="bxh"></span>
-           <h3 class="chart-title">Bảng xếp hạng</h3>
+           <h3 class="chart-title">
+           	Bảng xếp hạng
+           	<span class="target-tooltip">
+              <img src="images/icon_question.png" alt="">
+              <span>Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có nghĩa là làm 10 câu thì làm đúng 5 câu.</span>
+            </span>
+         	</h3>
            <!-- Nav tabs -->
    				<ul class="nav nav-tabs nav-tabs-charts" role="tablist">
    					<li role="presentation" class="active"><a href="#home1" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true"><span>Xếp hạng tuần</span></a></li>
@@ -1510,7 +1566,13 @@
        </section>
          <section class="block-charts">
            <span class="flag"><img src="images/upload/icon_ranking_rut_gon.png" alt="bxh"></span>
-           <h3 class="chart-title">Bảng xếp hạng <br> đề thi rút gọn <br> mới nhất</h3>
+           <h3 class="chart-title">
+           	Bảng xếp hạng <br> đề thi rút gọn mới nhất
+           	<span class="target-tooltip">
+              <img src="images/icon_question.png" alt="">
+              <span>Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có nghĩa là làm 10 câu thì làm đúng 5 câu.</span>
+            </span>
+         	</h3>
            <div class="chart-button">
              <a href="#">Làm đề thi rút gọn ngay!</a>
            </div>
@@ -1728,7 +1790,7 @@
        <div class="link-share"><a href="#" title="">Link để chia sẻ với bạn bè</a></div>
        <div class="copy-link">
          <!-- fix feedback 27-03-2017 -->
-         <input id="copy-text" value="https://github.com" readonly>
+         <input class="text" id="copy-text" value="http://giasutoeic.com/invite/MMMMMM" readonly>
          <button class="button-link style-1" id="copy-link">
              copy
          </button>
