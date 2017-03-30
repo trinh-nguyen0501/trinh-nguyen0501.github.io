@@ -20,6 +20,7 @@ function Page(){
 		}
 
 		$('.heading-milestone .notif .icon-notif').click(function(){
+			event.stopPropagation();
 			var notif = $('.heading-milestone .notif');
 			if(notif.hasClass('active')){
 				notif.removeClass('active');
@@ -30,6 +31,7 @@ function Page(){
 			}
 		});
 		$('.dl-mobile > img').click(function(){
+			event.stopPropagation();
 			if($('.dl-mobile .days-learning-mb').hasClass('active')){
 				$('.dl-mobile .days-learning-mb').removeClass('active');
 				$(this).parent().find('.days-learning-mb').removeClass('active');
@@ -39,7 +41,15 @@ function Page(){
 			}
 		});
 		// click outside
-		$(document).mouseup(function (e) {
+		$(window).click(function() {
+			if($('.heading-milestone .notif').hasClass('active')) {
+	      	$('.heading-milestone .notif .icon-notif').trigger('click');
+	      }
+      if($('.dl-mobile .days-learning-mb').hasClass('active')) {
+	      	$('.dl-mobile > img').trigger('click');
+	      }
+		});
+		/*$(document).mouseup(function (e) {
 		    var container1= $('.icon-notif'), container2 = $('.notif-show');
 
 		    if (!container1.is(e.target) && container1.has(e.target).length === 0 && !container2.is(e.target) && container2.has(e.target).length === 0)
@@ -48,7 +58,7 @@ function Page(){
 		      	$('.heading-milestone .notif .icon-notif').trigger('click');
 		      }
 		    }
-		});
+		});*/
 		$('.xem-lo-trinh').click(function(){
 			$('.learing-process').show();
 		});
@@ -60,7 +70,7 @@ function Page(){
 			$(this).closest('li').remove();
 		});
 		// click outside
-		$(document).mouseup(function (e) {
+		/*$(document).mouseup(function (e) {
 		    var container = $('.dl-mobile');
 
 		    if (!container.is(e.target) // if the target of the click isn't the container...
@@ -70,7 +80,7 @@ function Page(){
 		      	$('.dl-mobile > img').trigger('click');
 		      }
 		    }
-		});
+		});*/
 	}
 
 	$(document).mouseup(function (e){
