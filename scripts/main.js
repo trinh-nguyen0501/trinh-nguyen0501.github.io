@@ -77,7 +77,7 @@ function Page(){
 	    var container = $('.heading-milestone .notif');
 
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-     		$('.heading-milestone .notif .no.active').trigger('click');
+     		$('.heading-milestone .notif .icon-notif').trigger('click');
 	    }
 	});
 	// slick chart
