@@ -60,7 +60,7 @@ function Page(){
 			$(this).closest('li').remove();
 		});
 		// click outside
-		$(document).on('touchstart', function (e) {
+		document.documentElement.addEventListener("touchend", function(e){
 		    var container = $('.dl-mobile');
 
 		    if (!container.is(e.target) // if the target of the click isn't the container...
@@ -73,7 +73,7 @@ function Page(){
 		});
 	}
 
-	$(document).on('touchstart', function (e) {
+	document.documentElement.addEventListener("touchend", function(e){
 	    var container = $('.heading-milestone .notif');
 
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
