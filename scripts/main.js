@@ -41,7 +41,7 @@ function Page(){
 			}
 		});
 		// click outside
-		document.documentElement.addEventListener("touchend", function(e){
+		$(document).on('click touchstart', function (e) {
 		    var container1= $('.notif-wrapper'), container2 = $('.notif-show');
 
 		    if (!container1.is(e.target) && container1.has(e.target).length === 0 && !container2.is(e.target) && container2.has(e.target).length === 0)
@@ -62,7 +62,7 @@ function Page(){
 			$(this).closest('li').remove();
 		});
 		// click outside
-		document.documentElement.addEventListener("touchend", function(e){
+		$(document).on('click touchstart', function (e) {
 		    var container = $('.dl-mobile');
 
 		    if (!container.is(e.target) // if the target of the click isn't the container...
