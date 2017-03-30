@@ -20,6 +20,7 @@
 }
 .slick-chart .item {
   text-align: center;
+  padding-top: 20px;
 }
 .slick-chart .item a {
   display: inline-block;
@@ -34,7 +35,7 @@
   width: 100%;
   text-align: center;
   color: #333;
-  margin-top: -20px;
+  top: -20px;
 }
 .slick-chart .item span.fill {
   max-width: 28px;

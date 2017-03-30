@@ -83,7 +83,18 @@ function Page(){
 	// slick chart
 	if($('.slick-chart').length > 0) {
 		$('.slick-chart').on('init', function(event, slick){
+			var step = 0;
+			if($(window).width() > 767) {
+				step = 7;
+			}else{
+				step = 0;
+			}
 			var indexActive = $('.slick-chart .item.active').index();
+
+			if(indexActive >= step) {
+				indexActive = indexActive - step;
+			}
+
 			slick.slickGoTo(indexActive);
 		});
 

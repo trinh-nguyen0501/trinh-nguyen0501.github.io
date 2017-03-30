@@ -213,6 +213,8 @@ a:hover {
     .progress .progress-bar .value-min {
       bottom: -25px;
       left: 0px;
+      width: 50px;
+      text-align: left;
       color: #333; }
     .progress .progress-bar .value-current {
       min-width: 40px;
@@ -510,7 +512,7 @@ a:hover {
   position: relative;
   background: #404040;
   border-top-left-radius: 5px;
-  border-top-right-radius: 5px; 
+  border-top-right-radius: 5px;
 	color: #fff; }
 	.block-chart h3 span{
 		display: inline-block;
@@ -586,7 +588,7 @@ a:hover {
     -webkit-border-radius: 11px;
     -moz-border-radius: 11px;
     border-radius: 11px;
-    display: inline-block; 
+    display: inline-block;
     -webkit-transition: 0.15s linear;
     -moz-transition: 0.15s linear;
     -ms-transition: 0.15s linear;
@@ -822,7 +824,7 @@ a:hover {
     	height: 37px;
     	background: #fff;
     	top: -33px;
-    	right: 0;	
+    	right: 0;
     	position: absolute;
     	-webkit-border-top-left-radius: 5px;
 			-webkit-border-top-right-radius: 5px;
@@ -844,6 +846,11 @@ a:hover {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px; }
+      @media only screen and (max-width: 389px) {
+        .heading-milestone .notif-show .notif-list {
+          width: 290px;
+        }
+      }
       .heading-milestone .notif-show .notif-list li {
         padding: 10px 15px 9px 15px;
         border-top: 1px solid #e9e9e9; }
@@ -1113,7 +1120,7 @@ a:hover {
     min-width: 212px; }
   .block-milestone.block-milestone-1 .name {
     float: left;
-    margin: 35px 35px 0 0; 
+    margin: 35px 35px 0 0;
     width: 120px;
   }
   .block-milestone.block-milestone-1 .milestone-group {
@@ -1165,7 +1172,7 @@ a:hover {
         float: right;
         margin-top: 0; }
     .toeic-milestone .milestone-desc {
-      margin-bottom: 20px; }
+      margin-bottom: 7px; }
     .toeic-milestone .block-milestone {
       margin-bottom: 25px;
       margin-left: 10px;
@@ -1185,6 +1192,7 @@ a:hover {
          }
          .toeic-milestone .block-milestone .name h3 {
            max-width: 90px;
+           min-height: 33px;
          }
          /*fix feedback integration 23-3-2017*/
       .toeic-milestone .block-milestone .progress-wrapper {
@@ -1196,10 +1204,11 @@ a:hover {
         margin-right: 26px; }
       .toeic-milestone .block-milestone .icon-check-finish {
         margin-left: 30px; }
+    /*fix feedback integration 30-3-2017*/
     .toeic-milestone .toeic-milestone-item {
       clear: both;
       overflow: hidden;
-      padding: 16px 0; }
+      padding: 16px 0 3px 0; }
     .toeic-milestone .milestone-grammar-wrapper {
       max-width: 530px;
       margin: 0 auto; }
@@ -1207,7 +1216,7 @@ a:hover {
       float: left;
       width: 150px;
       min-height: 210px;
-      margin: 0 13px;
+      margin: 13px;
       text-align: center; }
       .toeic-milestone .milestone-grammar.block-milestone > .inner {
         padding: 33px 25px; }
