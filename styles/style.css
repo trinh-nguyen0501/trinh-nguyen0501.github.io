@@ -814,6 +814,7 @@ a:hover {
     float: right;
     position: relative;
     padding: 5px 0 5px 5px;
+    top: -5px;
     cursor: pointer; }
     .heading-milestone .notif > img {
       width: 20px;
