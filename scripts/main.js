@@ -19,12 +19,14 @@ function Page(){
 			$('[data-scroll]').mCustomScrollbar();
 		}
 
-		$('.heading-milestone .notif .icon-notif').click(function(){
+		$('.notif-wrapper').click(function(){
 			var notif = $('.heading-milestone .notif');
 			if(notif.hasClass('active')){
+				$(this).removeClass('active');
 				notif.removeClass('active');
 				$(this).parent().find('.notif-show').stop().slideUp();
 			}else{
+				$(this).addClass('active');
 				notif.addClass('active');
 				$(this).parent().find('.notif-show').stop().slideDown();
 			}
@@ -40,12 +42,12 @@ function Page(){
 		});
 		// click outside
 		document.documentElement.addEventListener("touchend", function(e){
-		    var container1= $('.icon-notif'), container2 = $('.notif-show');
+		    var container1= $('.notif-wrapper'), container2 = $('.notif-show');
 
 		    if (!container1.is(e.target) && container1.has(e.target).length === 0 && !container2.is(e.target) && container2.has(e.target).length === 0)
 		    {
-		      if($('.heading-milestone .notif').hasClass('active')) {
-		      	$('.heading-milestone .notif .icon-notif').trigger('click');
+		      if($('.notif-wrapper').hasClass('active')) {
+		      	$('.notif-wrapper').trigger('click');
 		      }
 		    }
 		});
