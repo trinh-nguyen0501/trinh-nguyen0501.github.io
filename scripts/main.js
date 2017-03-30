@@ -19,6 +19,15 @@ function Page(){
 			$('[data-scroll]').mCustomScrollbar();
 		}
 
+		$(window).click(function() {
+			if($('.heading-milestone .notif').hasClass('active')) {
+	      	$('.heading-milestone .notif .icon-notif').removeClass('active');
+	      	$('.heading-milestone .notif .notif-show').stop().slideUp();
+	      }
+      if($('.dl-mobile .days-learning-mb').hasClass('active')) {
+	      	$('.dl-mobile .days-learning-mb').removeClass('active');
+	      }
+		});
 		$('.heading-milestone .notif .icon-notif').click(function(){
 			event.stopPropagation();
 			var notif = $('.heading-milestone .notif');
@@ -41,14 +50,6 @@ function Page(){
 			}
 		});
 		// click outside
-		$(window).click(function() {
-			if($('.heading-milestone .notif').hasClass('active')) {
-	      	$('.heading-milestone .notif .icon-notif').trigger('click');
-	      }
-      if($('.dl-mobile .days-learning-mb').hasClass('active')) {
-	      	$('.dl-mobile > img').trigger('click');
-	      }
-		});
 		/*$(document).mouseup(function (e) {
 		    var container1= $('.icon-notif'), container2 = $('.notif-show');
 
