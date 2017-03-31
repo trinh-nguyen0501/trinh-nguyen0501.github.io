@@ -1077,13 +1077,13 @@ a:hover {
   .progress-wrapper .target img {
     margin-left: 3px; }
   .progress-wrapper .target .target-tooltip ,
-  .chart-title .target-tooltip {
+  .chart-title .target-tooltip, .process-list .not-finish .target-tooltip {
     position: relative; }
     .progress-wrapper .target .target-tooltip {
       top: -2px;
     }
     .progress-wrapper .target .target-tooltip > span ,
-    .chart-title .target-tooltip > span {
+    .chart-title .target-tooltip > span, .process-list .not-finish .target-tooltip > span {
       width: 185px;
       position: absolute;
       right: -12px;
@@ -1099,12 +1099,16 @@ a:hover {
       z-index: 99;
       border-radius: 5px;
       display: none; }
+      .process-list .not-finish .target-tooltip > span {
+        right: -19px;
+        top: -32px;
+      }
       .chart-title .target-tooltip > span {
       	top: 32px;
       	right: -6px;
       }
       .progress-wrapper .target .target-tooltip > span:before ,
-      .chart-title .target-tooltip > span:before {
+      .chart-title .target-tooltip > span:before, .process-list .not-finish .target-tooltip > span:before {
         content: "";
         position: absolute;
         top: -8px;
@@ -1114,8 +1118,14 @@ a:hover {
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-bottom: 8px solid #ebebeb; }
+        .process-list .not-finish .target-tooltip > span:before {
+          top: auto;
+          bottom: -8px;
+          border-bottom: 0;
+          border-top: 8px solid #ebebeb;
+        }
     .progress-wrapper .target .target-tooltip:hover > span ,
-    .chart-title .target-tooltip:hover > span {
+    .chart-title .target-tooltip:hover > span, .process-list .not-finish:hover .target-tooltip > span {
       display: block; }
     .progress-wrapper .value-min .target-tooltip {
     	top: -2px;
@@ -1132,6 +1142,10 @@ a:hover {
     		right: auto;
     		left: 10px;
     	}
+      .process-list .not-finish .target-tooltip > span {
+        width: 142px;
+        top: -46px;
+      }
     }
 .block-milestone.block-milestone-2 .learing-title {
   margin-bottom: 15px; }
