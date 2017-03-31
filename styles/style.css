@@ -28,7 +28,7 @@ a:hover {
     max-width: 18px; }
   .days-learning > span {
     margin-right: 2px; }
-    .days-learning:hover {
+    .days-learning:hover, .days-learning:focus, .days-learning:visited {
       color: #fff;
     }
     @media only screen and (min-width: 992px) {
