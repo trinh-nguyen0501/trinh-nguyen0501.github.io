@@ -42,6 +42,7 @@ function Page(){
 		});
 		// click outside
 		$(document).on('click touchstart', function (e) {
+			e.stopPropagation();
 		    var container1= $('.notif-wrapper'), container2 = $('.notif-show');
 
 		    if (!container1.is(e.target) && container1.has(e.target).length === 0 && !container2.is(e.target) && container2.has(e.target).length === 0)
@@ -63,6 +64,7 @@ function Page(){
 		});
 		// click outside
 		$(document).on('click touchstart', function (e) {
+			e.stopPropagation();
 		    var container = $('.dl-mobile');
 
 		    if (!container.is(e.target) // if the target of the click isn't the container...
