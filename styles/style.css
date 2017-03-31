@@ -947,17 +947,17 @@ a:hover {
     }
     .notif-wrapper:hover {
       background: #fff;
-      -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
-      -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
-      box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
+      -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.32);
+      -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.32);
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.32);
     }
     .notif-wrapper.active {
       background: #fff;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
-      -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
-      -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
-      box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
+      -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.32);
+      -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.32);
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.32);
     }
     .notif-wrapper.active:before {
       content: "";
@@ -1333,6 +1333,7 @@ a:hover {
       width: 100%;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
+      border: 1px solid #404040;
       border-radius: 5px; }
     .list-blogs .highlight-blog .img {
       display: block;
@@ -1401,6 +1402,7 @@ a:hover {
         width: 100%;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
+        border: 1px solid #404040;
         border-radius: 5px; }
     .list-blogs .more-blogs .info {
       display: table-cell;
