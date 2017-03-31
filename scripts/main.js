@@ -60,7 +60,8 @@ function Page(){
 			$('.learing-process').hide();
 		});
 		// delete notif item
-		$('.notif-list .icon-delete').click(function(){
+		$('.notif-list .icon-delete').click(function(e){
+			e.stopPropagation();
 			$(this).closest('li').remove();
 		});
 		// click outside
