@@ -43,14 +43,14 @@ function Page(){
 		// click outside
 		$(document).on('click touchstart', function (e) {
 			e.stopPropagation();
-		    var container1= $('.notif-wrapper'), container2 = $('.notif-show');
+			var $target = $(e.target);
 
-		    if (!container1.is(e.target) && container1.has(e.target).length === 0 && !container2.is(e.target) && container2.has(e.target).length === 0)
-		    {
-		      if($('.notif-wrapper').hasClass('active')) {
-		      	$('.notif-wrapper').trigger('click');
-		      }
-		    }
+	    if(!$target.closest('.notif-wrapper').length && !$target.hasClass('notif-wrapper') &&
+       !$target.closest('.notif-show').length && !$target.hasClass('notif-show')) {
+        if($('.notif-wrapper').hasClass('active')) {
+	      	$('.notif-wrapper').trigger('click');
+	      }
+    	}
 		});
 		$('.xem-lo-trinh').click(function(){
 			$('.learing-process').show();
