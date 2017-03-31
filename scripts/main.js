@@ -55,7 +55,8 @@ function Page(){
 		$('.xem-lo-trinh').click(function(){
 			$('.learing-process').show();
 		});
-		$('.point-close').click(function(){
+		$('.point-close').click(function(e){
+			e.stopPropagation();
 			$('.learing-process').hide();
 		});
 		// delete notif item
