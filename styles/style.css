@@ -1156,6 +1156,16 @@ a:hover {
     .progress-wrapper .value-min .target-tooltip > span {
     	line-height: 15px;
     }
+    @media only screen and (min-width: 992px) {
+      .progress-wrapper .value-min .target-tooltip > span {
+        left: -5px;
+        right: auto;
+      }
+      .progress-wrapper .value-min .target-tooltip > span::before {
+        right: auto;
+        left: 8px;
+      }
+    }
     @media only screen and (max-width: 991px) {
     	.progress-wrapper .value-min .target-tooltip > span {
     		right: auto;
@@ -1283,6 +1293,9 @@ a:hover {
       clear: both;
       overflow: hidden;
       padding: 16px 0 3px 0; }
+      .toeic-milestone .toeic-milestone-item:first-child {
+        overflow: visible;
+      }
     .toeic-milestone .milestone-grammar-wrapper {
       max-width: 530px;
       margin: 0 auto; }
