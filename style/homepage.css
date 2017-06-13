@@ -13,6 +13,12 @@
     height: 91px;
   }
 }
+@media screen and (max-width: 991px) {
+  .gst-home header .header__menu__right .login-link:hover {
+    border-top: 0;
+    padding: 0;
+  }
+}
 @media screen and (min-width: 992px) {
   .gst-home header .header__menu__left > ul > li:hover,
   .gst-home header .header__menu__left > ul > li.current-menu {
@@ -46,6 +52,11 @@
   color: #fff;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.11);
   text-decoration: none;
+}
+.link-dang-ki:focus {
+  text-decoration: none;
+  color: #fff;
+  outline: none;
 }
 @media screen and (min-width: 480px) {
   .link-dang-ki {
@@ -126,6 +137,8 @@
     width: auto;
     min-width: 300px;
   }
+}
+@media screen and (min-width: 992px) {
   .btn-style.fb-link {
     min-width: 235px;
     margin-top: 120px;
@@ -169,6 +182,45 @@
     margin-bottom: 35px;
   }
 }
+.form-checkbox label {
+  position: relative;
+  font-size: 14px;
+  font-family: "Roboto-Light";
+  color: #333;
+}
+.form-checkbox label:before,
+.form-checkbox label:after {
+  font-family: "FontAwesome";
+  left: -25px;
+  top: -3px;
+  font-size: 20px;
+  position: absolute;
+  color: #08b4e7;
+}
+.form-checkbox label:before {
+  content: "\f096";
+  z-index: 2;
+}
+.form-checkbox label:after {
+  content: "\f14a";
+  z-index: 3;
+  opacity: 0;
+}
+.form-checkbox input[type=checkbox] {
+  opacity: 0;
+}
+.form-checkbox input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+.link-forgotpass {
+  font-size: 14px;
+  font-family: "Roboto-Light";
+  color: #333;
+  transition: all .2s linear;
+}
+.link-forgotpass:hover {
+  text-decoration: none;
+}
 .fb-comments-link {
   display: block;
   font-size: 16px;
@@ -178,7 +230,7 @@
   border-radius: 50px;
   transition: all .2s linear;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 480px) {
   .fb-comments-link {
     min-width: 260px;
     display: inline-block;
@@ -208,6 +260,59 @@
   background: url(../images/fb_comment_icon.png) no-repeat;
   background-size: cover;
   transition: all .2s linear;
+}
+@media screen and (max-width: 991px) {
+  .hidden-mb {
+    display: none;
+  }
+}
+.modal-backdrop {
+  background-color: rgba(0, 169, 219, 0.9);
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 750px;
+    margin-top: 100px;
+  }
+}
+.modal .register {
+  padding: 0;
+}
+.modal .register-form {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+.modal button.close {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(../images/close_button.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+@media (max-width: 991px) {
+  .modal-backdrop {
+    background-color: #fff;
+  }
+  .modal-backdrop.in {
+    opacity: 1;
+  }
+  .modal .register-form {
+    box-shadow: none;
+  }
+  .modal button.close {
+    right: 0;
+    top: -25px;
+    background-image: url(../images/close_button_mb.png);
+  }
+  .modal .form-bottom {
+    margin-top: 30px;
+  }
+  .modal-dialog {
+    margin: 45px 15px;
+  }
 }
 /*!
  * animate.css -http://daneden.me/animate
@@ -3345,7 +3450,7 @@
   position: absolute;
   left: 27px;
   right: 27px;
-  bottom: 85px;
+  bottom: 75px;
 }
 @media screen and (min-width: 480px) {
   .banner .link-dang-ki {
@@ -3369,6 +3474,9 @@
   }
   .banner .col > .inner {
     bottom: 55px;
+  }
+  .banner .col .bubble {
+    visibility: hidden;
   }
   .banner .col .bubble p {
     font-size: 18px;
@@ -3654,8 +3762,17 @@
 .register .sec-title {
   margin-bottom: 50px;
 }
-.register .form-inner {
-  margin-bottom: 45px;
+.register .fb-register {
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  .register .register-btn {
+    margin-top: 45px;
+  }
+}
+.register .form-bottom {
+  margin-bottom: 50px;
+  padding-left: 10px;
 }
 @media screen and (min-width: 992px) {
   .register {
@@ -3708,11 +3825,18 @@
   padding: 0 25px;
 }
 .comments .comments-list {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.comments .comments-list .col-md-3 {
+  margin-bottom: 30px;
+}
+.comments .comments-list-photo {
+  padding-left: 45px;
+  padding-right: 45px;
 }
 .comments .comments-item {
-  padding: 20px 47px 50px;
+  padding: 20px 25px 50px;
   background: url(../images/bg_comments.png) no-repeat;
   background-size: 100% 100%;
 }
@@ -3739,6 +3863,56 @@
 .comments .comments-slider img {
   margin-left: auto;
   margin-right: auto;
+}
+.comments .comments-slider {
+  margin-bottom: 33px;
+}
+.comments .comments-slider .slick-prev,
+.comments .comments-slider .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-top: -10px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  z-index: 10;
+}
+.comments .comments-slider .slick-next {
+  right: -15px;
+  background: rgba(255, 255, 255, 0.8) url(../images/slide_arrow_right_mb.png) no-repeat;
+  background-position: center center;
+}
+.comments .comments-slider .slick-prev {
+  left: -15px;
+  background: rgba(255, 255, 255, 0.8) url(../images/slide_arrow_left_mb.png) no-repeat;
+  background-position: center center;
+}
+.comments .thumb-control {
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  color: #000;
+  border-radius: 50px;
+  border: 1px dashed #999;
+  margin-bottom: 17px;
+  transition: all .2s linear;
+  background-color: transparent;
+  padding: 18px 10px;
+}
+.comments .thumb-control:hover {
+  color: #76b917;
+  border-color: #76b917;
+}
+.comments .slick-dots .slick-active .thumb-control {
+  color: #76b917;
+  border-color: #76b917;
 }
 @media screen and (min-width: 992px) {
   .comments {
@@ -3802,5 +3976,35 @@
   .comments .comments-item .comments-inner {
     position: relative;
     z-index: 2;
+  }
+  .comments .comments-list-photo {
+    margin-top: 35px;
+  }
+  .comments .comments-slider .slick-prev,
+  .comments .comments-slider .slick-next {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    top: 35%;
+  }
+  .comments .comments-slider .slick-prev {
+    background-image: url(../images/slide_arrow_left.png);
+  }
+  .comments .comments-slider .slick-next {
+    background-image: url(../images/slide_arrow_right.png);
+  }
+  .comments .slick-dots {
+    margin-top: 44px;
+    margin-bottom: 50px;
+  }
+  .comments .slick-dots li {
+    display: inline-block;
+    padding-right: 20px;
+  }
+  .comments .slick-dots .thumb-control {
+    display: inline-block;
+    width: auto;
+    min-width: 200px;
+    padding: 20px 25px;
   }
 }

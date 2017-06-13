@@ -35,7 +35,10 @@ var Site = (function($, window, undefined) {
       }
     });
   };
-
+  $('[data-load-more-cmt]').click(function() {
+    $(this).siblings().children('.comments-item').show();
+    $(this).hide();
+  });
   var init = function() {
     // to do
     controlFormFocus();
@@ -191,6 +194,7 @@ jQuery(function() {
 
       ele.slick({
         dots: true,
+        adaptiveHeight: true,
         customPaging : function(slider, i) {
           var thumb = $(slider.$slides[i]).data('thumb');
           return '<button class="thumb-control">' + thumb + '</a>';
