@@ -3508,8 +3508,8 @@
   }
 }
 .animation-target {
-  -webkit-animation: animation 1000ms linear infinite both;
-  animation: animation 1000ms linear infinite both;
+  -webkit-animation: animation 1000ms;
+          animation: animation 1000ms;
 }
 /* Generated with Bounce.js. Edit at https://goo.gl/RuLuCy */
 @-webkit-keyframes animation {

@@ -368,8 +368,8 @@ header .header__menu__right .login-link:hover {
 
 @media only screen and (min-width: 992px) {
     .header1 .user-block .icon-show {
-        -ms-transform: rotate(180deg);
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
 }
 
@@ -575,8 +575,8 @@ header .header__menu__right .login-link:hover {
         color: #ccc;
     }
     .header1 .content .header__menu__left .user-block .icon-show {
-        -ms-transform: rotate(180deg);
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
     .header1 .content .header__menu__left .submenu {
         display: block;
@@ -613,7 +613,6 @@ header .header__menu__right .login-link:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     color: #87c52e;
@@ -845,6 +844,7 @@ footer .link-title {
 
 footer .link-title span {
     margin-left: 10px;
+    transition: -webkit-transform .3s linear;
     transition: transform .3s linear;
 }
 
@@ -915,11 +915,13 @@ footer .contact-block a {
         padding: 30px 0;
     }
     footer .link-title span {
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
         display: inline-block;
     }
     footer .link-title.active span {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
         display: inline-block;
     }
     footer .wrap-link {
@@ -971,7 +973,8 @@ footer .contact-block a {
         position: absolute;
         top: -20px;
         right: 70px;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
 }
 
@@ -1303,7 +1306,6 @@ a.yellow-btn:hover {
     margin: 60px auto;
     border: none;
     background: #ddd;
-    background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, rgb(255, 255, 255)), color-stop(0.1, rgb(221, 221, 221)), color-stop(0.9, rgb(221, 221, 221)), color-stop(1, rgb(255, 255, 255)));
     background-image: -moz-linear-gradient(left center, rgb(255, 255, 255) 0%, rgb(221, 221, 221) 10%, rgb(221, 221, 221) 90%, rgb(255, 255, 255) 100%);
 }
 
@@ -1646,7 +1648,6 @@ a.yellow-btn:hover {
     text-align: center;
     position: fixed;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     border: 1px solid #00ccff;
     z-index: 9999;
@@ -1668,7 +1669,6 @@ a.yellow-btn:hover {
     }
     .supporting-container a:hover img {
         -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
         transform: scale(1.2);
     }
     .supporting-container a img {

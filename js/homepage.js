@@ -207,18 +207,19 @@ jQuery(function() {
         dots: true,
         adaptiveHeight: true,
         speed: 1000,
-        draggable : false,
+        draggable: false,
+        touchMove: false,
+        swipe: false,
         customPaging : function(slider, i) {
           var thumb = $(slider.$slides[i]).data('thumb');
           return '<button class="thumb-control">' + thumb + '</a>';
         },
       });
-      ele.on('beforeChange', function(){
+      ele.on('afterChange', function(){
         var offsetTop = $(this).offset().top - $('header').height() - 20;
         $('html,body').animate({
           scrollTop: offsetTop},
         'slow');
-        console.log();
       });
     },
     destroy: function() {
