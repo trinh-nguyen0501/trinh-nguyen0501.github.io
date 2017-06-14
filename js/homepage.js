@@ -93,6 +93,7 @@ jQuery(function() {
             slidesToScroll: 2,
             arrows: false,
             dots: false,
+            draggable: false,
             responsive: [
               {
                 breakpoint: 992,
@@ -206,6 +207,7 @@ jQuery(function() {
         dots: true,
         adaptiveHeight: true,
         speed: 1000,
+        draggable : false,
         customPaging : function(slider, i) {
           var thumb = $(slider.$slides[i]).data('thumb');
           return '<button class="thumb-control">' + thumb + '</a>';
