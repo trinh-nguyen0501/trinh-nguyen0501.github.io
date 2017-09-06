@@ -13,45 +13,51 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/modernizr.js"></script>
   </head>
-  <body class="home">
-    <header>
-      <div class="grid">
-        <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="true"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"> </span></button><a class="logo" href="index.html" title="Giao Tiep Sieu Toc"><img src="images/giao_tiep_sieu_toc_logo.png" alt="Giao Tiep Sieu Toc"></a>
+  <body class="home" data-aos-animate data-aos-once data-aos-easing="ease-out-back">
+    <header data-header-fixed>
+      <div class="header-inner">
+        <div class="grid">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="true"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"> </span></button><a class="logo" href="index.html" title="Giao Tiep Sieu Toc"><img src="images/giao_tiep_sieu_toc_logo.png" alt="Giao Tiep Sieu Toc"></a>
+          </div>
+          <div class="nav-right">
+            <nav class="collapse navbar-collapse" id="bs-navbar-collapse" aria-expanded="true">
+                  <ul>
+                    <li class="active"><a href="#" title="Tính năng &amp; Lợi ích" data-scroll-to data-id="#features"><img src="images/icon_menu_1.png" class="hidden-md hidden-lg" /> <span> Tính năng & Lợi ích </span></a>
+                    </li>
+                    <li><a href="#" title="Các chủ đề giao tiếp" data-scroll-to data-id="#topics"><img src="images/icon_menu_2.png" class="hidden-md hidden-lg" /> <span> Các chủ đề giao tiếp </span></a>
+                    </li>
+                    <li><a href="#" title="Nhận xét người dùng" data-scroll-to data-id="#comments"><img src="images/icon_menu_3.png" class="hidden-md hidden-lg" /> <span> Nhận xét người dùng </span></a>
+                    </li>
+                    <li><a href="#" title="Liên hệ" data-scroll-to data-id="#support"><img src="images/icon_menu_4.png" class="hidden-md hidden-lg" /> <span> Liên hệ </span></a>
+                    </li>
+                  </ul>
+            </nav><a class="btn btn-blue navbar-button" href="#" title="Tải ứng dụng" data-scroll-to data-id="#apps"><img src="images/icon_download_app.png" alt="Tải ứng dụng">Tải ứng dụng</a>
+          </div>
         </div>
-        <nav class="hidden collapse navbar-collapse" id="bs-navbar-collapse" aria-expanded="true">
-              <ul>
-                <li class="active"><a href="#features" title="&lt;img src=&quot;images/icon_menu_1.png&quot; /&gt; &lt;span&gt; Tính năng &amp; Lợi ích &lt;/span&gt;"><img src="images/icon_menu_1.png" /> <span> Tính năng & Lợi ích </span></a>
-                </li>
-                <li><a href="#topic" title="&lt;img src=&quot;images/icon_menu_2.png&quot; /&gt; &lt;span&gt; Các chủ đề giao tiếp &lt;/span&gt;"><img src="images/icon_menu_2.png" /> <span> Các chủ đề giao tiếp </span></a>
-                </li>
-                <li><a href="#comments" title="&lt;img src=&quot;images/icon_menu_3.png&quot; /&gt; &lt;span&gt; Nhận xét người dùng &lt;/span&gt;"><img src="images/icon_menu_3.png" /> <span> Nhận xét người dùng </span></a>
-                </li>
-                <li><a href="#contacts" title="&lt;img src=&quot;images/icon_menu_4.png&quot; /&gt; &lt;span&gt; Liên hệ &lt;/span&gt;"><img src="images/icon_menu_4.png" /> <span> Liên hệ </span></a>
-                </li>
-              </ul>
-        </nav><a class="btn btn-blue navbar-button" href="#" title="Tải ứng dụng"><img src="images/icon_download_app.png" alt="Tải ứng dụng">Tải ứng dụng</a>
       </div>
     </header>
-    <section class="features">
+    <section class="features" id="features">
       <div class="features-top">
         <div class="grid">
           <h2 class="features-title">Giao tiếp tiếng Anh thành thạo<span>nhanh chóng và tiện lợi</span></h2>
           <p class="text-center"><a class="btn btn-orange" href="#" title="Tải ứng dụng Giao Tiếp PRO">Tải ứng dụng Giao Tiếp PRO</a>
           </p>
-          <div class="characters slick" data-banner>
-            <div class="characters-item">
-              <div class="col character"><img src="images/characters_1.png" alt="Nhờ giao tiếp tiếng Anh tốt, tôi có thể đi du lịch thả ga!">
-                <div class="bubble"><span></span>Nhờ giao tiếp tiếng Anh tốt, tôi có thể đi du lịch thả ga!</div>
+          <div class="characters-wrapper"><img class="hidden-sm hidden-xs col-md-3" src="images/photo_iphone.png" alt="iphone">
+            <div class="characters slick" data-banner>
+              <div class="characters-item col-md-3 col-md-offset-1">
+                <div class="col character"><img src="images/characters_1.png" alt="Nhờ giao tiếp tiếng Anh tốt, tôi có thể đi du lịch thả ga!">
+                  <div class="bubble bubble--1"><span></span>Nhờ giao tiếp tiếng Anh tốt, tôi có thể đi du lịch thả ga!</div>
+                </div>
+                <div class="col phone hidden-md hidden-lg"><img src="images/photo_iphone.png" alt="iphone">
+                </div>
               </div>
-              <div class="col phone"><img src="images/photo_iphone.png" alt="iphone">
-              </div>
-            </div>
-            <div class="characters-item">
-              <div class="col phone phone-1"><img src="images/photo_iphone.png" alt="iphone">
-              </div>
-              <div class="col character character-1"><img src="images/characters_2.png" alt="Nhờ giao tiếp tiếng Anh thành thạo, tôi thăng tiến trong công việc!">
-                <div class="bubble bubble-1"><span></span>Nhờ giao tiếp tiếng Anh thành thạo, tôi thăng tiến trong công việc!</div>
+              <div class="characters-item col-md-4 col-md-offset-4">
+                <div class="col phone phone-1 hidden-md hidden-lg"><img src="images/photo_iphone.png" alt="iphone">
+                </div>
+                <div class="col character character-1"><img src="images/characters_2.png" alt="Nhờ giao tiếp tiếng Anh thành thạo, tôi thăng tiến trong công việc!">
+                  <div class="bubble bubble-1 bubble--2"><span></span>Nhờ giao tiếp tiếng Anh thành thạo, tôi thăng tiến trong công việc!</div>
+                </div>
               </div>
             </div>
           </div>
@@ -66,18 +72,22 @@
         <div class="feature-item">
           <div class="grid">
             <div class="photo-animation"><img src="images/characters_3.png" alt="Giao tiếp được ngay trong thực tế">
+              <div class="animation animation-1"><img src="images/bubble_1.png" alt="Giao tiếp được ngay trong thực tế">
+              </div>
             </div>
-            <div class="description">
+            <div class="description" data-aos="fade-up">
               <h3 class="subtitle">Giao tiếp được ngay trong thực tế</h3>
               <p>Các đoạn hội thoại theo chủ đề giúp bạn giao tiếp tốt trong các tình huống thường ngày!</p>
             </div>
           </div>
         </div>
-        <div class="feature-item">
+        <div class="feature-item style-1">
           <div class="grid">
             <div class="photo-animation"><img src="images/characters_4.png" alt="Phát âm chuẩn">
+              <div class="animation animation-2"><img src="images/characters_5.png" alt="Phát âm chuẩn">
+              </div>
             </div>
-            <div class="description">
+            <div class="description" data-aos="fade-up">
               <h3 class="subtitle">Phát âm chuẩn</h3>
               <p> Ứng dụng luyện cho bạn nghe và nói phát âm tiếng Anh chuẩn!</p>
             </div>
@@ -86,8 +96,10 @@
         <div class="feature-item">
           <div class="grid">
             <div class="photo-animation"><img src="images/characters_6.png" alt="Phản xạ nhanh tức thời">
+              <div class="animation animation-3"><img src="images/characters_6_1.png" alt="Phát âm chuẩn">
+              </div>
             </div>
-            <div class="description">
+            <div class="description" data-aos="fade-up">
               <h3 class="subtitle">Phản xạ nhanh tức thời</h3>
               <p>Ghi nhớ các mẫu câu thông dụng theo tình huống để phản xạ nhanh chóng khi gặp tình huống tương tự!</p>
             </div>
@@ -96,8 +108,10 @@
         <div class="feature-item">
           <div class="grid">
             <div class="photo-animation"><img src="images/characters_7.png" alt="Thực hành giao tiếp và được sửa phát âm">
+              <div class="animation animation-4"><img src="images/characters_7_1.png" alt="Phát âm chuẩn">
+              </div>
             </div>
-            <div class="description">
+            <div class="description" data-aos="fade-up">
               <h3 class="subtitle">Thực hành giao tiếp và được sửa phát âm</h3>
               <p>Người hướng dẫn trực tiếp thực hành giao tiếp với bạn và sửa phát âm cho bạn!</p>
             </div>
@@ -105,8 +119,8 @@
         </div>
       </div>
     </section>
-    <section class="apps">
-      <div class="grid">
+    <section class="apps" id="apps">
+      <div class="grid" data-aos="fade-up">
         <div class="row">
           <div class="col-md-6"><img class="photo_phones" src="images/photo_phones.png" alt="apps">
           </div>
@@ -122,8 +136,8 @@
         </div>
       </div>
     </section>
-    <section class="topics">
-      <div class="grid">
+    <section class="topics" id="topics">
+      <div class="grid" data-aos="fade-up">
         <h2 class="title title-white">Học hơn 30 chủ đề giao tiếp</h2>
         <div class="topic-listing">
           <div class="topic-item"><img class="topic-photo" src="images/photo_topic_1.png" alt="Kết bạn">
@@ -181,8 +195,8 @@
         </p><a class="btn btn-orange" href="#" title="Tải ứng dụng để học ngay!">Tải ứng dụng để học ngay!</a>
       </div>
     </section>
-    <section class="comments">
-      <div class="grid">
+    <section class="comments" id="comments">
+      <div class="grid" data-aos="fade-up">
         <h2 class="title">Người học nói gì?</h2>
         <div class="comments-slider slick" data-comment-slider>
           <div class="item">
@@ -216,10 +230,34 @@
               <h4 class="comment-info"><span> <span class="bold">Trang Phan </span>- HCM </span><span>Sinh viên</span></h4>
             </div>
           </div>
+          <div class="item">
+            <div class="comment-item"><img class="avt" src="images/avatar.png" alt="Trang Phan">
+              <p class="comment-desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum </p>
+              <h4 class="comment-info"><span> <span class="bold">Trang Phan </span>- HCM </span><span>Sinh viên</span></h4>
+            </div>
+          </div>
+          <div class="item">
+            <div class="comment-item"><img class="avt" src="images/avatar.png" alt="Trang Phan">
+              <p class="comment-desc">It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+              <h4 class="comment-info"><span> <span class="bold">Trang Phan </span>- HCM </span><span>Sinh viên</span></h4>
+            </div>
+          </div>
+          <div class="item">
+            <div class="comment-item"><img class="avt" src="images/avatar.png" alt="Trang Phan">
+              <p class="comment-desc">It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+              <h4 class="comment-info"><span> <span class="bold">Trang Phan </span>- HCM </span><span>Sinh viên</span></h4>
+            </div>
+          </div>
+          <div class="item">
+            <div class="comment-item"><img class="avt" src="images/avatar.png" alt="Trang Phan">
+              <p class="comment-desc">It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+              <h4 class="comment-info"><span> <span class="bold">Trang Phan </span>- HCM </span><span>Sinh viên</span></h4>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="support">
+    <section class="support" id="support">
       <div class="grid">
         <h2 class="title">Bạn cần hỗ trợ</h2>
         <div class="support-inner">
@@ -264,7 +302,78 @@
         </div>
       </div>
     </section>
-    <footer></footer>
+    <footer>
+      <div class="sharing border-top">
+        <div class="grid">
+          <p class="footer-title">Kết nối với chúng tôi</p>
+          <ul class="social">
+            <li><a class="blue" href="#" title="facebook"><img src="images/icon_facebook.png" alt="facebook"><span>Facebook</span></a>
+            </li>
+            <li><a class="orange" href="#" title="googleplus"><img src="images/icon_googleplus.png" alt="googleplus"><span>Google+</span></a>
+            </li>
+            <li><a class="red" href="#" title="youtube"><img src="images/icon_youtube.png" alt="youtube"><span>Youtube</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sitemap border-top">
+        <div class="grid">
+          <div class="sitemap-inner">
+            <div class="col col-1">
+              <h3 class="footer-title">Về Giao Tiếp Siêu Tốc</h3>
+              <ul class="nav">
+                <li><a href="#" title="Giới thiệu về Giao Tiếp Siêu Tốc">Giới thiệu về Giao Tiếp Siêu Tốc</a>
+                </li>
+                <li><a href="#" title="Điều khoản sử dụng">Điều khoản sử dụng</a>
+                </li>
+                <li><a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col col-2">
+              <h3 class="footer-title">Học Giao tiếp tiếng Anh</h3>
+              <ul class="nav">
+                <li><a href="#" title="Tiếng Anh nhà hàng">Tiếng Anh nhà hàng</a>
+                </li>
+                <li><a href="#" title="Giới thiệu bản thân bằng tiếng Anh ">Giới thiệu bản thân bằng tiếng Anh </a>
+                </li>
+                <li><a href="#" title="Giới thiệu bản thân để xin việc">Giới thiệu bản thân để xin việc</a>
+                </li>
+                <li><a href="#" title="Học tiếng Anh hiệu quả">Học tiếng Anh hiệu quả</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col col-3">
+              <h3 class="footer-title">Chăm sóc khách hàng</h3>
+              <ul class="nav">
+                <li><a href="#" title="Hướng dẫn thanh toán">Hướng dẫn thanh toán</a>
+                </li>
+                <li><a href="#" title="Cam kết hỗ trợ tối đa từ 9h sáng đến 9h tối:">Cam kết hỗ trợ tối đa từ 9h sáng đến 9h tối:</a>
+                </li>
+                <li><span class="phone">096 874 1750</span></li>
+                <li><a class="email" href="#" title="support@giaotiepsieutoc.com">support@giaotiepsieutoc.com</a>
+                </li>
+                <li><a class="sms" href="#" title="gửi tin nhắn">gửi tin nhắn</a>
+                </li>
+              </ul>
+              <div class="facebook-fanpage"><img src="images/facebook_fanpage.png" alt="">
+              </div>
+            </div>
+            <div class="google-play">
+              <h3 class="footer-title">Tải ứng dụng Giao tiếp PRO</h3>
+              <p><a href="#" title="Google play"><img src="images/google-play-black.png" alt=""></a><a href="#" title="Google play"><img src="images/google-play-white.png" alt=""></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy border-top">
+        <div class="grid">
+          <p>Bản quyền của công ty TNHH H2 Technology.</p>
+          <p>ĐT: 0916 92 1419. Địa chỉ: E13 Cư xá Phú Thọ Hòa, Đường Gò Cẩm Đệm, P.10, Q. Tân Bình, Tp. HCM. Đại diện: Ông Hoàng Hữu Hưng </p>
+        </div>
+      </div>
+    </footer><a class="back-to-top" href="javascript:;" title="Lên đầu trang" data-backtop><img src="images/icon_top.png" alt="Lên đầu trang"></a><a class="ic-contact" href="#" title="Bạn cần hỗ trợ?" data-scroll-to data-id="#support"><img src="images/icon_contact.png" alt="Bạn cần hỗ trợ?"></a>
     <script defer src="js/script.js"></script>
 
     <!--[if lte IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
