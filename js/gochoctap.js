@@ -123,7 +123,7 @@ jQuery(function() {
 			        		size:'100%',
 			            dataLabels: {
 			                enabled: true,
-			                distance: -18,
+			                distance: -22,
 			                style: {
 			                    fontWeight: 'bold',
 			                    color: 'black',
