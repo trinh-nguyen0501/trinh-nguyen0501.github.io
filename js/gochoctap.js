@@ -53,7 +53,7 @@ jQuery(function() {
       }
       win.resize(function() {
         width = win.innerWidth();
-        console.log(width);
+        // console.log(width);
         if(width <= 991) {
           if(eleContent.length) {
             if(ele.hasClass('active')) {
