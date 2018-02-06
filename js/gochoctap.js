@@ -26,7 +26,9 @@ jQuery(function() {
 ;(function($, window, undefined) {
   'use strict';
 
-  var pluginName = 'collapse';
+  var pluginName = 'collapse',
+      win = $(window),
+      width = win.innerWidth();
 
   function Plugin(element, options) {
     this.element = $(element);
@@ -39,27 +41,54 @@ jQuery(function() {
       var that = this,
         ele = that.element,
         eleContent = $(ele.data('target'));
+      if(width <= 991) {
+        // console.log(ele);
+        if(eleContent.length) {
+          if(ele.hasClass('active')) {
+            ele.removeClass('active');
+            $(ele.data('target')).stop().hide();
+          }
 
-      ele.on('click.' + pluginName, function(){
-      	var self = $(this),
-      			content = $(self.data('target'));
-
-      	if(content.length) {
-      		if(self.hasClass('active')) {
-      			content.stop().hide();
-      			self.removeClass('active');
-      		} else {
-      			content.stop().show();
-      			self.addClass('active');
-      		}
-      	}
+        }
+      }
+      win.resize(function() {
+        width = win.innerWidth();
+        console.log(width);
+        if(width <= 991) {
+          if(eleContent.length) {
+            if(ele.hasClass('active')) {
+              ele.removeClass('active');
+              $(ele.data('target')).stop().hide();
+            }
+          }
+        }
+        else {
+          if(eleContent.length) {
+            ele.addClass('active');
+            $(ele.data('target')).stop().show();
+          }
+        }
       });
+      ele.on('click.' + pluginName, function(){
+        var self = $(this),
+        content = $(self.data('target'));
 
+        if(content.length) {
+          if(self.hasClass('active')) {
+            content.stop().hide();
+            self.removeClass('active');
+          } else {
+            content.stop().show();
+            self.addClass('active');
+          }
+        }
+      });
       if(eleContent.length) {
-    		if(ele.hasClass('active')) {
-    			eleContent.stop().show();
-    		}
-    	}
+        if(ele.hasClass('active')) {
+          eleContent.stop().show();
+        }
+      }
+
     },
     destroy: function() {
       $.removeData(this.element[0], pluginName);
@@ -84,6 +113,7 @@ jQuery(function() {
   });
 
 }(jQuery, window));
+
 ;(function($, window, undefined) {
   'use strict';
 

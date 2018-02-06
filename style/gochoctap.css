@@ -44,6 +44,9 @@
 .goc-hoc-tap .footer {
   background-color: #fff;
 }
+.goc-hoc-tap .title {
+  max-width: none;
+}
 @media screen and (min-width: 992px) {
   .goc-hoc-tap .container {
     width: 1070px;
@@ -53,7 +56,6 @@
   }
   .goc-hoc-tap .title {
     font-size: 25px;
-    max-width: none;
   }
 }
 .collapse.in {
@@ -85,6 +87,11 @@
 .no-touch .ght-btn:hover {
   background-color: #016696;
   color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .ght-btn {
+    padding: 15px 10px;
+  }
 }
 .readmore-btn {
   display: inline-block;
@@ -836,7 +843,7 @@
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #e1e1e1;
-  padding: 24px 12px;
+  padding: 24px 15px;
   margin-top: 20px;
 }
 .voca-inprocess-list .readmore-btn.active {
@@ -883,6 +890,7 @@
 .voca-inprocess__title__links a + a {
   margin-left: 12px;
   position: relative;
+  transition: all .3s ease;
 }
 .voca-inprocess__title__links a + a:before {
   content: '\203A';
@@ -895,9 +903,9 @@
   transition: -webkit-transform .2s linear;
   transition: transform .2s linear;
 }
-.voca-inprocess__title__links a + a.collapsed:before {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+.voca-inprocess__title__links a + a.active {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 .voca-inprocess__title__links .ght-btn {
   min-width: 95px;
@@ -923,14 +931,14 @@
 }
 .voca-inprocess__bot .pie-chart-desc {
   float: left;
-  width: 140px;
+  width: 125px;
 }
 .voca-inprocess__bot .pie-chart {
   overflow: hidden;
 }
 @media screen and (min-width: 992px) {
   .voca-inprocess {
-    margin-top: 16px;
+    margin-top: 18px;
     padding: 30px 20px 22px;
   }
   .voca-inprocess__img {
@@ -944,18 +952,13 @@
   }
   .voca-inprocess__title__links a + a {
     margin-left: 22px;
-    transition: all .3s ease;
-  }
-  .voca-inprocess__title__links a + a.active {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
   }
   .voca-inprocess__bot__inner {
     margin-top: 24px;
     padding-top: 35px;
   }
   .voca-inprocess__bot .pie-chart-desc {
-    padding-left: 13px;
+    padding-left: 5px;
   }
   .voca-inprocess-list {
     margin-left: -15px;
@@ -1266,7 +1269,7 @@
     margin-top: 20px;
   }
   .ght-vocabulary {
-    padding: 38px 30px 52px;
+    padding: 38px 30px 54px;
     overflow: hidden;
   }
   .ght-vocabulary .ght-vocabulary__title {
@@ -1292,7 +1295,7 @@
   .ght-vocabulary .ght-btn {
     float: right;
     width: 370px;
-    margin-top: -40px;
+    margin-top: -30px;
   }
   .pie-chart {
     float: right;
