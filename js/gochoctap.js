@@ -43,30 +43,20 @@ jQuery(function() {
         eleContent = $(ele.data('target'));
       if(width <= 991) {
         // console.log(ele);
-        if(eleContent.length) {
-          if(ele.hasClass('active')) {
-            ele.removeClass('active');
-            $(ele.data('target')).stop().hide();
-          }
+        ele.removeClass('active');
+        eleContent.stop().hide();
 
-        }
       }
       win.resize(function() {
         width = win.innerWidth();
         // console.log(width);
         if(width <= 991) {
-          if(eleContent.length) {
-            if(ele.hasClass('active')) {
-              ele.removeClass('active');
-              $(ele.data('target')).stop().hide();
-            }
-          }
+          ele.removeClass('active');
+          eleContent.stop().hide();
         }
         else {
-          if(eleContent.length) {
-            ele.addClass('active');
-            $(ele.data('target')).stop().show();
-          }
+          ele.addClass('active');
+          eleContent.stop().show();
         }
       });
       ele.on('click.' + pluginName, function(){
