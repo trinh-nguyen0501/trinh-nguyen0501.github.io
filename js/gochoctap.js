@@ -143,7 +143,7 @@ jQuery(function() {
 			        		size:'100%',
 			            dataLabels: {
 			                enabled: true,
-			                distance: -21,
+			                distance: -22,
 			                style: {
 			                    fontWeight: 'bold',
 			                    color: 'black',
@@ -175,9 +175,9 @@ jQuery(function() {
 			          }
 			        },
 			        data: [
-			            [options.numberOne + '<span class="sup">%</span>', options.numberOne],
-			            [options.numberTwo + '<span class="sup">%</span>', options.numberTwo],
-			            [options.numberThree + '<span class="sup">%</span>', options.numberThree]
+			            [options.numberOne + '%', options.numberOne],
+			            [options.numberTwo + '%', options.numberTwo],
+			            [options.numberThree + '%', options.numberThree]
 			        ]
 			    }]
 			});

@@ -46,6 +46,7 @@
 }
 .goc-hoc-tap .title {
   max-width: none;
+  font-size: 23px;
 }
 @media screen and (min-width: 992px) {
   .goc-hoc-tap .container {
@@ -464,6 +465,11 @@
   top: auto;
   left: auto;
 }
+@media (min-width: 992px) {
+  .block-charts {
+    margin-top: 19px;
+  }
+}
 @media (min-width: 768px) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
@@ -754,6 +760,10 @@
   font-size: 12px;
   line-height: 15px;
   color: #0189c9;
+  transition: opacity .2s linear;
+}
+.block-charts .chart-item .tag:hover {
+  opacity: .7;
 }
 .block-charts .btn-view-more {
   text-align: center;
@@ -878,7 +888,7 @@
   padding: 0 18px 0 12px;
 }
 .voca-inprocess__title__main {
-  font-size: 25px;
+  font-size: 23px;
   font-family: 'opensans-bold';
   margin-bottom: 12px;
   line-height: 1.2;
@@ -949,6 +959,7 @@
   }
   .voca-inprocess__title__main {
     margin-bottom: 18px;
+    font-size: 25px;
   }
   .voca-inprocess__title__links a + a {
     margin-left: 22px;
@@ -1140,6 +1151,7 @@
 @media screen and (min-width: 992px) {
   .invites {
     padding: 20px 20px 18px;
+    margin-bottom: 50px;
   }
   .invites > p {
     text-align: left;
