@@ -465,11 +465,6 @@
   top: auto;
   left: auto;
 }
-@media (min-width: 992px) {
-  .block-charts {
-    margin-top: 19px;
-  }
-}
 @media (min-width: 768px) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
@@ -768,6 +763,11 @@
 .block-charts .btn-view-more {
   text-align: center;
   margin-top: 10px;
+}
+@media (min-width: 992px) {
+  .block-charts {
+    margin-top: 19px;
+  }
 }
 .reminder {
   background-color: #fff;
