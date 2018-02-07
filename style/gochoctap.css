@@ -154,7 +154,7 @@
   bottom: 0;
   z-index: -1;
   content: '';
-  background: url(../images/upload/icon-1.png) no-repeat;
+  background: url(../images/upload/icon_1.png) no-repeat;
   background-size: cover;
 }
 .no-touch .seeall-btn:hover {
@@ -245,7 +245,7 @@
   margin-top: 10px;
 }
 .quiz {
-  background: url(../images/upload/bg-quiz.png) no-repeat;
+  background: url(../images/upload/bg_quiz.png) no-repeat;
   background-size: cover;
   width: 289px;
   font-size: 19px;
@@ -692,7 +692,7 @@
   width: 6px;
   height: 9px;
   margin-top: 3px;
-  background: url(../images/upload/icon-up.png) no-repeat;
+  background: url(../images/upload/icon_up.png) no-repeat;
   background-size: cover;
   display: inline-block;
   margin-right: 3px;
@@ -702,7 +702,7 @@
   width: 6px;
   height: 9px;
   margin-top: 3px;
-  background: url(../images/upload/icon-down.png) no-repeat;
+  background: url(../images/upload/icon_down.png) no-repeat;
   background-size: cover;
   display: inline-block;
   margin-right: 3px;
@@ -811,7 +811,7 @@
   border-color: #19db04;
 }
 .reminder__radio label input[type='checkbox']:checked + span:before {
-  background-image: url('../images/upload/icon-check.png');
+  background-image: url('../images/upload/icon_check.png');
 }
 .reminder__radio label span {
   display: block;
@@ -824,7 +824,7 @@
   right: -28px;
   width: 28px;
   height: 22px;
-  background: url('../images/upload/icon-uncheck.png') no-repeat;
+  background: url('../images/upload/icon_uncheck.png') no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 992px) {
